@@ -1,3 +1,4 @@
+/*
 /obj/item/areaeditor/shuttle
 	name = "shuttle expansion permit"
 	desc = "A set of paperwork which is used to expand flyable shuttles."
@@ -184,3 +185,4 @@
 			height = new_width
 			dwidth = offset_y - 1
 			dheight = new_width - offset_x
+*/
