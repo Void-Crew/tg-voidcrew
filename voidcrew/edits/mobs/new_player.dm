@@ -13,7 +13,7 @@
 	for(var/obj/structure/overmap/ship/active_ships as anything in SSovermap.simulated_ships)
 		if(isnull(active_ships.shuttle))
 			CRASH("[active_ships] has no shuttle???")
-		if(length(active_ships.shuttle.spawn_points) <= 0)
+		if(length(active_ships.shuttle.spawn_points) <= 0 || !active_ships.joining_allowed)
 			continue
 		shuttle_choices["[active_ships.name] - ([active_ships.source_template?.short_name || "Unknown Class"])"] = active_ships
 

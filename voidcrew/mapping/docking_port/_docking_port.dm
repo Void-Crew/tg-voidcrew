@@ -3,7 +3,7 @@
  */
 /obj/docking_port/mobile/voidcrew
 	launch_status = UNLAUNCHED
-	callTime = 25 SECONDS
+	callTime = 0 SECONDS
 
 	/// Makes sure we dont run linking logic more than once
 	VAR_PRIVATE/cached_z_level
@@ -161,3 +161,9 @@
 	for(var/area/area as anything in shuttle_areas)
 		area.area_flags |= VALID_TERRITORY
 	// TODO - UPSTREAM - RECALCULATE BOUNDS
+
+
+// TODO - remove this and figure out why lighting doesn't update correctly
+/area/afterShuttleMove(new_parallax_dir)
+	. = ..()
+	create_area_lighting_objects()
