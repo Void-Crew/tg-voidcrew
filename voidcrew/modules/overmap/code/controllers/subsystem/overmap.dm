@@ -25,6 +25,8 @@ SUBSYSTEM_DEF(overmap)
 	/// List of all events
 	var/list/events = list()
 
+	var/size = OVERMAP_SIZE
+
 	///List of all simulated ships
 	var/list/simulated_ships = list()
 
@@ -234,3 +236,126 @@ SUBSYSTEM_DEF(overmap)
 
 	initial_ship = null
 	message_admins("Overmap Starter Ship was deleted. You may want to investigate or spawn a new one!")
+
+
+
+	/**
+  * Reserves a square dynamic encounter area, and spawns a ruin in it if one is supplied.
+  * * on_planet - If the encounter should be on a generated planet. Required, as it will be otherwise inaccessible.
+  * * target - The ruin to spawn, if any
+  * * ruin_type - The ruin to spawn. Don't pass this argument if you want it to randomly select based on planet type.
+  */
+
+  /**
+ * ##get_ruin_list
+ *
+ * Returns the SSmapping list of ruins, according to the given desired ruin type
+ *
+ * Arguments:
+ * * ruin_type - a string, depicting the desired ruin type
+ */
+/datum/controller/subsystem/overmap/proc/get_ruin_list(ruin_type)
+	switch(ruin_type) // temporary because SSmapping needs a refactor to make this any better
+		if (ZTRAIT_LAVA_RUINS)
+			return SSmapping.lava_ruins_templates
+		if (ZTRAIT_ICE_RUINS)
+			return SSmapping.ice_ruins_templates
+		if (ZTRAIT_JUNGLE_RUINS)
+			return SSmapping.jungle_ruins_templates
+		if (ZTRAIT_REEBE_RUINS)
+			return SSmapping.yellow_ruins_templates
+		if (ZTRAIT_SPACE_RUINS)
+			return SSmapping.space_ruins_templates
+		if (ZTRAIT_BEACH_RUINS)
+			return SSmapping.beach_ruins_templates
+		if (ZTRAIT_WASTELAND_RUINS)
+			return SSmapping.wasteland_ruins_templates
+
+/datum/controller/subsystem/overmap/proc/spawn_dynamic_encounter(datum/overmap/planet/planet_type, ruin = TRUE, ignore_cooldown = FALSE, datum/map_template/ruin/ruin_type)
+	log_shuttle("SSOVERMAP: SPAWNING DYNAMIC ENCOUNTER STARTED")
+	var/list/ruin_list
+	var/datum/map_generator/mapgen
+	var/area/target_area
+	var/turf/surface = /turf/open/space/basic
+	var/datum/weather/weather_controller_type
+	var/datum/planet/planet_template
+	if(!isnull(planet_type))
+		planet_type = new planet_type
+		ruin_list = get_ruin_list(planet_type.ruin_type)
+		if(!isnull(planet_type.mapgen))
+			mapgen = new planet_type.mapgen
+		target_area = planet_type.target_area
+		surface = planet_type.surface
+		weather_controller_type = planet_type.weather_controller_type
+		if(!(isnull(planet_type.planet_template)))
+			planet_template = new planet_type.planet_template
+		qdel(planet_type)
+
+	if(ruin && ruin_list && !ruin_type)
+		ruin_type = ruin_list[pick(ruin_list)]
+		if(ispath(ruin_type))
+			ruin_type = new ruin_type
+
+	var/height = QUADRANT_MAP_SIZE
+	var/width = QUADRANT_MAP_SIZE
+
+	var/encounter_name = "Dynamic Overmap Encounter"
+	var/datum/map_zone/mapzone = SSmapping.create_map_zone(encounter_name)
+	var/datum/virtual_level/vlevel = SSmapping.create_virtual_level(encounter_name, list(ZTRAIT_MINING = TRUE), mapzone, width, height, ALLOCATION_QUADRANT, QUADRANT_MAP_SIZE)
+
+	vlevel.reserve_margin(QUADRANT_SIZE_BORDER)
+
+	if(mapgen) /// If we have a map generator, don't ChangeTurf's in fill_in. Just to ChangeTurf them once again.
+		surface = null
+	vlevel.fill_in(surface, target_area)
+
+	if(ruin_type)
+		var/turf/ruin_turf = locate(rand(
+			vlevel.low_x+6 + vlevel.reserved_margin,
+			vlevel.high_x-ruin_type.width-6 - vlevel.reserved_margin),
+			vlevel.high_y-ruin_type.height-6 - vlevel.reserved_margin,
+			vlevel.z_value
+			)
+		ruin_type.load(ruin_turf)
+
+	if (!isnull(mapgen) && istype(mapgen, /datum/map_generator/planet_generator) && !isnull(planet_template))
+		mapgen.generate_terrain(vlevel.get_unreserved_block(), planet_template)
+	else
+		if (!isnull(mapgen))
+			mapgen.generate_terrain(vlevel.get_unreserved_block())
+
+	if(weather_controller_type)
+		new weather_controller_type(mapzone)
+
+
+	// locates the first dock in the bottom left, accounting for padding and the border
+	var/turf/primary_docking_turf = locate(
+		vlevel.low_x+RESERVE_DOCK_DEFAULT_PADDING+1 + vlevel.reserved_margin,
+		vlevel.low_y+RESERVE_DOCK_DEFAULT_PADDING+1 + vlevel.reserved_margin,
+		vlevel.z_value
+		)
+	// now we need to offset to account for the first dock
+	var/turf/secondary_docking_turf = locate(
+		primary_docking_turf.x+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
+		primary_docking_turf.y,
+		primary_docking_turf.z
+		)
+
+	//This check exists because docking ports don't like to be deleted.
+	var/obj/docking_port/stationary/primary_dock = new(primary_docking_turf)
+	primary_dock.dir = NORTH
+	primary_dock.name = "\improper Uncharted Space"
+	primary_dock.height = RESERVE_DOCK_MAX_SIZE_SHORT
+	primary_dock.width = RESERVE_DOCK_MAX_SIZE_LONG
+	primary_dock.dheight = 0
+	primary_dock.dwidth = 0
+
+	var/obj/docking_port/stationary/secondary_dock = new(secondary_docking_turf)
+	secondary_dock.dir = NORTH
+	secondary_dock.name = "\improper Uncharted Space"
+	secondary_dock.height = RESERVE_DOCK_MAX_SIZE_SHORT
+	secondary_dock.width = RESERVE_DOCK_MAX_SIZE_LONG
+	secondary_dock.dheight = 0
+	secondary_dock.dwidth = 0
+
+	return list(mapzone, primary_dock, secondary_dock)
