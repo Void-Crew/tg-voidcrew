@@ -1158,7 +1158,7 @@
 /area/shuttle/voidcrew/mechaton/robotics)
 "To" = (
 /obj/structure/cable,
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /obj/machinery/button/door{
 	id = "bridgeshutters";
 	name = "Bridge Shutters Control";

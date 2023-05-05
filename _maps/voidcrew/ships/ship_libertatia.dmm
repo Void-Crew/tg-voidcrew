@@ -71,7 +71,7 @@
 /area/shuttle/voidcrew/libertatia/bridge)
 "bG" = (
 /obj/structure/table/reinforced,
-/obj/item/areaeditor{
+/obj/item/areaeditor/shuttle{
 	pixel_y = 10
 	},
 /obj/item/megaphone/command{

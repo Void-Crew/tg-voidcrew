@@ -1300,7 +1300,7 @@
 /area/shuttle/voidcrew/lamia/bar)
 "Mn" = (
 /obj/structure/table/wood/fancy/royalblue,
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /obj/item/clothing/shoes/sandal/magic{
 	pixel_y = -7
 	},

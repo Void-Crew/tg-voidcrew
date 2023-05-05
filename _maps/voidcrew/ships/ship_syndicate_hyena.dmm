@@ -1203,7 +1203,7 @@
 /obj/structure/sign/poster/contraband/revolver{
 	pixel_y = 32
 	},
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /obj/item/megaphone/sec{
 	name = "syndicate megaphone";
 	pixel_x = -4;

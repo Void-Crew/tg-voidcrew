@@ -768,7 +768,7 @@
 "Ow" = (
 /obj/structure/table/reinforced,
 /obj/item/card/emag,
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/voidcrew/blackbeard/bridge)
 "Pi" = (

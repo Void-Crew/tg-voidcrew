@@ -43,7 +43,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/reinforced,
 /obj/item/laser_pointer,
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /obj/item/radio/off{
 	pixel_x = 6;
 	pixel_y = 14

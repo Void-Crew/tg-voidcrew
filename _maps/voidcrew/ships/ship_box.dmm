@@ -1011,7 +1011,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/box/engine)

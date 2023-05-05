@@ -1139,7 +1139,7 @@
 	pixel_x = 5;
 	pixel_y = 8
 	},
-/obj/item/areaeditor{
+/obj/item/areaeditor/shuttle{
 	pixel_x = -11
 	},
 /obj/effect/turf_decal/tile/blue/half{

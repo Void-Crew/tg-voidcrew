@@ -883,7 +883,7 @@
 /obj/item/storage/fancy/cigarettes/cigars{
 	pixel_y = 12
 	},
-/obj/item/areaeditor{
+/obj/item/areaeditor/shuttle{
 	pixel_x = 5;
 	pixel_y = 1
 	},

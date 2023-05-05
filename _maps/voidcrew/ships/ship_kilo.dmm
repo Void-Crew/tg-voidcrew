@@ -899,7 +899,7 @@
 	pixel_y = 4
 	},
 /obj/machinery/firealarm/directional/north,
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/voidcrew/kilo/bridge)
 "oj" = (
@@ -1871,7 +1871,7 @@
 	},
 /obj/effect/decal/cleanable/greenglow,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /obj/structure/table,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/kilo/engineering)

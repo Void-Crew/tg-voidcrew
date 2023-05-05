@@ -1242,7 +1242,7 @@
 /area/shuttle/voidcrew/metis/hallway/aft)
 "zw" = (
 /obj/item/reagent_containers/cup/glass/flask/gold,
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /obj/structure/table/wood,
 /turf/open/floor/carpet/purple,
 /area/shuttle/voidcrew/metis/eepsoffice)

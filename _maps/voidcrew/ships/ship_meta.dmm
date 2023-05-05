@@ -1063,7 +1063,7 @@
 /obj/item/wrench{
 	pixel_x = -12
 	},
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/iron/dark,

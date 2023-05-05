@@ -254,7 +254,7 @@
 /obj/item/reagent_containers/cup/glass/flask/gold{
 	list_reagents = list(/datum/reagent/consumable/ethanol/sbiten=30)
 	},
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/voidcrew/bogatyr/bridge)
 "on" = (

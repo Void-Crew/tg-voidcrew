@@ -1178,7 +1178,7 @@
 	pixel_x = 6;
 	pixel_y = 14
 	},
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /obj/machinery/light{
 	dir = 1
 	},

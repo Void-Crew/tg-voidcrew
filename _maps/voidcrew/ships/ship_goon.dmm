@@ -469,7 +469,7 @@
 "JH" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/voidcrew/goon/bridge)
 "JP" = (

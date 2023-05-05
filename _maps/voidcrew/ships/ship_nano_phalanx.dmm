@@ -1747,7 +1747,7 @@
 /area/shuttle/voidcrew/phalanx/medbay/morgue)
 "yw" = (
 /obj/structure/table/reinforced,
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /turf/open/floor/carpet/executive,
 /area/shuttle/voidcrew/phalanx/bridge)
 "yA" = (

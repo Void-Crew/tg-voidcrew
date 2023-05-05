@@ -1,12 +1,15 @@
-/*
+#define BP_MAX_ROOM_SIZE 300
+
 /obj/item/areaeditor/shuttle
 	name = "shuttle expansion permit"
 	desc = "A set of paperwork which is used to expand flyable shuttles."
-	icon = 'icons/obj/items_and_weapons.dmi'
-	icon_state = "blueprints"
 	color = COLOR_ASSEMBLY_WHITE
 	fluffnotice = "Not to be used for non-sanctioned shuttle construction and maintenance."
 	var/obj/docking_port/mobile/target_shuttle
+
+/mob
+	///Last time an area was created by a mob plus a short cooldown period
+	var/create_area_cooldown
 
 /obj/item/areaeditor/shuttle/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	. = ..()
@@ -24,7 +27,7 @@
 	onclose(user, "blueprints")
 
 /obj/item/areaeditor/shuttle/Topic(href, href_list)
-	if(!usr.canUseTopic(src) || usr != loc)
+	if(!usr.can_perform_action(src) || usr != loc)
 		usr << browse(null, "window=blueprints")
 		return TRUE
 	if(href_list["create_area"])
@@ -66,15 +69,24 @@
 	if(turfs.len > BP_MAX_ROOM_SIZE)
 		to_chat(creator, "<span class='warning'>The room you're in is too big. It is [turfs.len >= BP_MAX_ROOM_SIZE *2 ? "more than 100" : ((turfs.len / BP_MAX_ROOM_SIZE)-1)*100]% larger than allowed.</span>")
 		return
-	var/list/areas = list("New Area" = /area/ship)
+	var/list/apc_map = list()
+	var/list/areas = list("New Area" = /area/shuttle/voidcrew)
 	var/list/shuttle_coords = target_shuttle.return_coords()
 	var/near_shuttle = FALSE
 	for(var/i in 1 to turfs.len)
-		var/area/place = get_area(turfs[i])
+		var/turf/the_turf = turfs[i]
+		var/area/place = get_area(the_turf)
 		if(blacklisted_areas[place.type])
 			continue
 		if(!place.requires_power || (place.area_flags & NOTELEPORT) || (place.area_flags & HIDDEN_AREA))
 			continue // No expanding powerless rooms etc
+		if(!TURF_SHARES(the_turf)) // No expanding areas of walls/something blocking this turf because that defeats the whole point of them used to separate areas
+			continue
+		if(!isnull(place.apc))
+			apc_map[place.name] = place.apc
+		if(length(apc_map) > 1) // When merging 2 or more areas make sure we arent merging their apc into 1 area
+			to_chat(creator, span_warning("Multiple APC's detected in the vicinity. only 1 is allowed."))
+			return
 		areas[place.name] = place
 
 		// The following code checks to see if the tile is within one tile of the target shuttle
@@ -104,7 +116,6 @@
 			return
 		newA = new area_choice
 		newA.setup(str)
-		newA.set_dynamic_lighting()
 		newA.has_gravity = oldA.has_gravity
 	else
 		newA = area_choice
@@ -185,4 +196,4 @@
 			height = new_width
 			dwidth = offset_y - 1
 			dheight = new_width - offset_x
-*/
+

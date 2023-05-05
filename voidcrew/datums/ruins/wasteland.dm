@@ -1,7 +1,7 @@
-// Hey! Listen! Update \config\wastelandruins.txt with your new ruins!
+// Hey! Listen! Update \config\voidcrew\wastelandruins.txt with your new ruins!
 
 /datum/map_template/ruin/wasteland
-	prefix = "voidcrew/_maps/RandomRuins/WastelandRuins/"
+	prefix = "_maps/voidcrew/RandomRuins/WastelandRuins/"
 
 /datum/map_template/ruin/wasteland/solgov_crash
 	name = "Crashed SolGov Transport"

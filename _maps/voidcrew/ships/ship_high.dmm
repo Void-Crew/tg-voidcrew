@@ -2331,7 +2331,7 @@
 /area/shuttle/voidcrew/high/engineering)
 "UO" = (
 /obj/structure/table/wood,
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /obj/item/storage/fancy/cigarettes/cigars,
 /obj/item/lighter,
 /turf/open/floor/wood,

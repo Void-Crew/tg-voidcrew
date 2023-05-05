@@ -25,7 +25,7 @@
 "bK" = (
 /obj/effect/turf_decal/syndicateemblem/top/right,
 /obj/structure/closet/secure_closet/chief_medical,
-/obj/item/areaeditor,
+/obj/item/areaeditor/shuttle,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/voidcrew/spitfire/bridge)
 "ca" = (
