@@ -51,15 +51,11 @@
 /obj/item/kirbyplants,
 /turf/open/floor/light,
 /area/ruin/powered)
-"ie" = (
-/obj/item/storage/pill_bottle/floorpill/full,
-/turf/open/floor/light,
-/area/ruin/powered)
 "kc" = (
 /obj/structure/chair/sofa/right,
 /obj/item/research_notes/loot/medium,
 /mob/living/simple_animal/hostile/russian/ranged/trooper,
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/wood,
 /area/ruin/powered)
 "kf" = (
 /obj/structure/mineral_door/wood,
@@ -100,10 +96,6 @@
 "pG" = (
 /turf/open/floor/plastic,
 /area/ruin/powered)
-"pY" = (
-/obj/item/clothing/head/chicken,
-/turf/open/floor/carpet/cyan,
-/area/ruin/powered)
 "qg" = (
 /obj/machinery/hydroponics,
 /obj/item/seeds/cannabis/ultimate,
@@ -121,11 +113,6 @@
 /obj/structure/chair/sofa/left{
 	dir = 8
 	},
-/turf/open/floor/carpet/royalblue,
-/area/ruin/powered)
-"rN" = (
-/obj/item/kirbyplants/random,
-/obj/item/stack/sheet/mineral/diamond/five,
 /turf/open/floor/carpet/royalblue,
 /area/ruin/powered)
 "se" = (
@@ -147,7 +134,7 @@
 /obj/machinery/chem_dispenser/drinks{
 	dir = 8
 	},
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/wood,
 /area/ruin/powered)
 "xr" = (
 /obj/structure/chair/office/light,
@@ -155,8 +142,8 @@
 /turf/open/floor/plastic,
 /area/ruin/powered)
 "xL" = (
-/obj/structure/chair/sofa,
 /mob/living/simple_animal/hostile/russian/ranged/mosin,
+/obj/structure/chair/sofa/middle,
 /turf/open/floor/carpet/royalblue,
 /area/ruin/powered)
 "yA" = (
@@ -191,13 +178,9 @@
 /turf/open/floor/carpet/royalblue,
 /area/ruin/powered)
 "Cs" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/middle{
 	dir = 1
 	},
-/turf/open/floor/light,
-/area/ruin/powered)
-"Cz" = (
-/obj/effect/mob_spawn/human/corpse/solgov/infantry,
 /turf/open/floor/light,
 /area/ruin/powered)
 "CI" = (
@@ -228,13 +211,13 @@
 /turf/open/floor/carpet/blue,
 /area/ruin/powered)
 "GK" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
-/turf/open/floor/carpet/blue,
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "Ha" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/donkpockets,
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/wood,
 /area/ruin/powered)
 "HH" = (
 /obj/machinery/vending/hydroseeds,
@@ -242,14 +225,13 @@
 /turf/open/floor/plastic,
 /area/ruin/powered)
 "Iw" = (
-/obj/machinery/plantgenes/seedvault,
 /obj/structure/table/reinforced,
 /obj/item/research_notes/loot/big,
 /obj/machinery/light,
 /turf/open/floor/plastic,
 /area/ruin/powered)
 "JH" = (
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/wood,
 /area/ruin/powered)
 "JQ" = (
 /obj/machinery/chem_heater,
@@ -271,17 +253,17 @@
 /area/ruin/powered)
 "MI" = (
 /obj/structure/chair/sofa/left,
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/wood,
 /area/ruin/powered)
 "Nh" = (
 /obj/structure/table/glass,
 /obj/machinery/microwave,
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/wood,
 /area/ruin/powered)
 "Oa" = (
 /obj/structure/chair/sofa/right,
 /obj/item/stack/spacecash/c1000,
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/wood,
 /area/ruin/powered)
 "Ou" = (
 /mob/living/simple_animal/hostile/russian/ranged/mosin,
@@ -306,10 +288,6 @@
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/russian,
-/turf/open/floor/carpet/royalblue,
-/area/ruin/powered)
-"RJ" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
 /turf/open/floor/carpet/royalblue,
 /area/ruin/powered)
 "RS" = (
@@ -344,14 +322,8 @@
 /area/ruin/powered)
 "TP" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
 /obj/item/stack/medical/suture,
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/wood,
 /area/ruin/powered)
 "Vb" = (
 /turf/template_noop,
@@ -366,11 +338,7 @@
 /turf/open/floor/plastic,
 /area/ruin/powered)
 "WU" = (
-/obj/machinery/jukebox/disco/beach,
-/turf/open/floor/light,
-/area/ruin/powered)
-"Xs" = (
-/obj/item/gun/ballistic/automatic/pistol/commander,
+/obj/machinery/jukebox/disco,
 /turf/open/floor/light,
 /area/ruin/powered)
 "XC" = (
@@ -525,7 +493,7 @@ JH
 CI
 MB
 RS
-rN
+SI
 Px
 MB
 RS
@@ -596,7 +564,7 @@ RS
 Px
 sn
 Px
-RJ
+GK
 CI
 Px
 Px
@@ -620,7 +588,7 @@ RS
 Px
 sn
 Px
-RJ
+GK
 CI
 CI
 CI
@@ -712,7 +680,7 @@ RS
 "}
 (14,1,1) = {"
 RS
-pY
+Px
 sn
 sn
 VO
@@ -722,7 +690,7 @@ uC
 YD
 uC
 uC
-ie
+uC
 Le
 RS
 dd
@@ -745,7 +713,7 @@ uC
 uC
 Zo
 WU
-Xs
+uC
 uC
 aD
 RS
@@ -768,7 +736,7 @@ RS
 uC
 uC
 uC
-Cz
+uC
 uC
 uC
 hh
@@ -860,7 +828,7 @@ RS
 Px
 sn
 Px
-RJ
+GK
 CI
 CI
 CI
@@ -884,7 +852,7 @@ RS
 Px
 sn
 Px
-RJ
+GK
 CI
 Px
 Px

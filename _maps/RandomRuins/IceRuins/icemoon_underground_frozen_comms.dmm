@@ -1,11 +1,20 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aD" = (
-/obj/structure/fence/cut/medium,
-/turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/underground/explored)
+/turf/open/floor/pod/dark,
+/area/ruin/space/has_grav/listeningstation)
 "aU" = (
-/turf/open/genturf,
-/area/icemoon/underground/unexplored/rivers)
+/turf/template_noop,
+/area/template_noop)
+"bi" = (
+/obj/structure/cable,
+/obj/item/storage/toolbox/syndicate,
+/obj/structure/closet/syndicate/personal,
+/obj/item/gun/ballistic/automatic/pistol/clandestine,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/clothing/mask/chameleon/gps,
+/turf/open/floor/pod/dark,
+/area/ruin/space/has_grav/listeningstation)
 "cv" = (
 /obj/structure/flora/rock/pile/icy/style_random,
 /obj/machinery/light/small/directional/north,
@@ -14,11 +23,11 @@
 "cH" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/radio/intercom,
-/turf/open/floor/iron/dark,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "cO" = (
 /turf/open/floor/plating/snowed/smoothed/icemoon,
-/area/icemoon/underground/unexplored/rivers)
+/area/template_noop)
 "dq" = (
 /obj/structure/flora/tree/dead/style_random,
 /obj/structure/flora/grass/green/style_random,
@@ -32,10 +41,19 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/door/airlock/external/glass/ruin,
+/obj/machinery/door/airlock/external/ruin,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/iron/smooth{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
+/area/ruin/space/has_grav/listeningstation)
+"gi" = (
+/obj/machinery/light/small/directional/east,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/telecomms/server/presets/common/birdstation,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "gH" = (
 /obj/structure/fence/end{
@@ -45,7 +63,11 @@
 /area/icemoon/underground/explored)
 "hY" = (
 /turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/underground/unexplored/rivers)
+/area/template_noop)
+"iT" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/listeningstation)
 "kr" = (
 /turf/open/floor/iron/smooth{
 	initial_gas_mix = "ICEMOON_ATMOS"
@@ -60,8 +82,19 @@
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
 /area/ruin/space/has_grav/listeningstation)
+"ow" = (
+/obj/machinery/light/small/directional/south,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/telecomms/processor/preset_one/birdstation{
+	name = "processor unit"
+	},
+/turf/open/floor/pod/dark,
+/area/ruin/space/has_grav/listeningstation)
 "oD" = (
-/turf/open/floor/iron/dark,
+/obj/structure/cable,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "qS" = (
 /turf/open/misc/asteroid/snow/icemoon,
@@ -72,11 +105,13 @@
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/turf/open/floor/iron/dark,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "rm" = (
-/obj/structure/table/reinforced/rglass,
-/turf/open/floor/iron/dark,
+/obj/machinery/computer/communications/syndicate{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "rS" = (
 /obj/structure/flora/tree/pine/style_random,
@@ -85,7 +120,8 @@
 /area/icemoon/underground/explored)
 "st" = (
 /obj/machinery/door/airlock/public,
-/turf/open/floor/iron/dark,
+/obj/structure/cable,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "te" = (
 /turf/open/floor/plating,
@@ -103,18 +139,24 @@
 	},
 /area/ruin/space/has_grav/listeningstation)
 "vh" = (
-/obj/item/chair/plastic,
-/turf/open/floor/iron/dark,
+/obj/structure/chair/comfy/shuttle/tactical{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "wg" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 4
 	},
+/obj/item/gps/computer{
+	gpstag = "SYND01"
+	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "wJ" = (
 /obj/structure/sink/directional/south,
-/turf/open/floor/iron/dark,
+/obj/structure/cable,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "wP" = (
 /turf/open/floor/plating/snowed/smoothed/icemoon,
@@ -130,7 +172,10 @@
 /obj/structure/rack,
 /obj/item/stack/cable_coil/five,
 /obj/item/wirecutters,
-/turf/open/floor/plating,
+/obj/item/crowbar/large/heavy,
+/obj/item/wrench,
+/obj/item/key/atv,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "zi" = (
 /obj/machinery/suit_storage_unit/syndicate,
@@ -142,19 +187,26 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/structure/tank_holder/extinguisher{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/turf/open/floor/plating,
+/obj/structure/cable,
+/obj/machinery/power/smes/engineering,
+/turf/open/floor/pod/dark,
+/area/ruin/space/has_grav/listeningstation)
+"zt" = (
+/obj/structure/cable,
+/turf/closed/wall/mineral/titanium/survival/nodiagonal,
 /area/ruin/space/has_grav/listeningstation)
 "zz" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
 /obj/structure/reagent_dispensers/fueltank,
-/turf/open/floor/plating,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
+"AV" = (
+/obj/structure/cable,
+/obj/machinery/power/rtg/advanced,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/icemoon/underground/explored)
 "AY" = (
 /obj/structure/fence/corner{
 	dir = 6
@@ -169,7 +221,7 @@
 	},
 /obj/item/toy/crayon/spraycan,
 /obj/machinery/light/small/directional/north,
-/turf/open/floor/iron/dark,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "Cu" = (
 /obj/structure/fence/cut/large,
@@ -179,7 +231,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/south,
 /obj/machinery/button/door/directional/north{
 	id = "ice_comms_car";
 	name = "Garage Door Button";
@@ -187,7 +238,11 @@
 	pixel_y = 22;
 	req_access = list("research")
 	},
-/turf/open/floor/plating,
+/obj/structure/cable,
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "FK" = (
 /obj/machinery/light/small/broken/directional/north,
@@ -196,36 +251,45 @@
 "Gl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/dresser,
-/obj/machinery/light/small/broken/directional/west,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/grimy{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
 /area/ruin/space/has_grav/listeningstation)
 "HT" = (
-/obj/structure/closet/wardrobe/grey,
 /obj/effect/spawner/random/maintenance/three,
-/turf/open/floor/iron/dark,
+/obj/structure/cable,
+/obj/structure/closet/syndicate,
+/turf/open/floor/pod/dark,
+/area/ruin/space/has_grav/listeningstation)
+"Il" = (
+/obj/vehicle/ridden/atv,
+/turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "Jh" = (
-/obj/structure/fence,
-/turf/open/floor/plating/snowed/smoothed/icemoon,
-/area/icemoon/underground/explored)
+/turf/closed/wall/mineral/titanium/survival/nodiagonal,
+/area/ruin/space/has_grav/listeningstation)
 "Js" = (
 /obj/structure/fence,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "Jt" = (
-/turf/closed/wall/ice,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/telecomms/receiver/preset_left/birdstation{
+	name = "subspace receiver"
+	},
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "Kh" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/structure/rack,
-/obj/item/wrench,
-/obj/item/crowbar/large/heavy,
-/obj/machinery/light/small/built/directional/south,
-/turf/open/floor/plating,
+/obj/machinery/telecomms/broadcaster/preset_left/birdstation{
+	name = "subspace broadcaster"
+	},
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "Ly" = (
 /obj/structure/fence/end{
@@ -233,18 +297,28 @@
 	},
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
+"LZ" = (
+/obj/machinery/power/port_gen/pacman/super,
+/obj/structure/cable,
+/obj/item/stack/sheet/mineral/uranium{
+	amount = 25
+	},
+/turf/open/floor/pod/dark,
+/area/ruin/space/has_grav/listeningstation)
 "MS" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/door/airlock/shuttle,
+/obj/structure/cable,
 /turf/open/floor/iron/grimy{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
 /area/ruin/space/has_grav/listeningstation)
 "NO" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable,
 /turf/open/floor/iron/grimy{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
@@ -253,25 +327,47 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 1
 	},
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/effect/mapping_helpers/apc/cell_10k,
+/obj/effect/mapping_helpers/apc/syndicate_access,
+/obj/machinery/smartfridge/survival_pod/preloaded{
+	name = "syndicate listening pod storage"
+	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "OM" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/structure/rack,
-/turf/open/floor/plating,
+/obj/structure/tank_holder/extinguisher{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/turf/open/floor/pod/dark,
+/area/ruin/space/has_grav/listeningstation)
+"Pe" = (
+/obj/machinery/light/small/directional/west,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/telecomms/message_server/preset,
+/turf/open/floor/pod/dark,
+/area/ruin/space/has_grav/listeningstation)
+"Pk" = (
+/obj/machinery/light/small/directional/south,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/telecomms/allinone/nuclear,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "Qj" = (
-/obj/effect/turf_decal/box/corners,
-/obj/item/plate/oven_tray{
-	color = "#858585";
-	desc = "A convenient place to put all your loose ends!";
-	name = "Mechanic's Tray";
-	pixel_x = 1;
-	pixel_y = 2
-	},
 /obj/item/screwdriver,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/listeningstation)
+"QI" = (
+/obj/effect/turf_decal/box/corners,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "RK" = (
@@ -282,18 +378,24 @@
 /obj/machinery/door/poddoor/shutters{
 	id = "ice_comms_car"
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "SK" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/door/airlock/external/ruin,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/structure/fans/tiny,
 /turf/open/floor/iron/smooth{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
 /area/ruin/space/has_grav/listeningstation)
 "SR" = (
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/plating/snowed/smoothed/icemoon,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/telecomms/hub/preset,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
 "Tz" = (
 /obj/structure/flora/tree/dead/style_random,
@@ -310,12 +412,17 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "VN" = (
-/obj/structure/frame/computer{
-	dir = 1
-	},
 /obj/machinery/light/small/directional/south,
-/turf/open/floor/iron/dark,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/listeningstation)
+"Yg" = (
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/icemoon/underground/explored)
+"Zh" = (
+/obj/machinery/light/small/broken/directional/north,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/icemoon/underground/explored)
 
 (1,1,1) = {"
 aU
@@ -380,12 +487,12 @@ aU
 aU
 qS
 TG
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
+Jh
+Jh
+Jh
+Jh
+Jh
+Jh
 yl
 TG
 aU
@@ -397,16 +504,16 @@ aU
 aU
 aU
 qS
-Jt
-Jt
-Jt
+Jh
+Jh
+Jh
 rd
 cH
 cH
 rm
-Jt
-Jt
-Jt
+Jh
+Jh
+Jh
 Cu
 Ly
 aU
@@ -415,17 +522,17 @@ aU
 (6,1,1) = {"
 aU
 qS
-TG
-Jt
+AV
+Jh
 Gl
-Jt
+Jh
 Cr
-oD
+aD
 vh
 VN
-Jt
+Jh
 uz
-Jt
+Jh
 FK
 wP
 qS
@@ -434,14 +541,14 @@ aU
 (7,1,1) = {"
 aU
 qS
-qS
-Jt
+AV
+zt
 NO
 MS
 oD
-oD
-oD
-oD
+aD
+aD
+aD
 eC
 kr
 SK
@@ -453,17 +560,17 @@ qS
 (8,1,1) = {"
 aU
 qS
-qS
-Jt
+AV
+Jh
 oj
-Jt
+Jh
 wJ
 HT
-oD
-oD
-Jt
+bi
+LZ
+Jh
 zi
-Jt
+Jh
 cv
 wP
 aU
@@ -473,16 +580,16 @@ aU
 aU
 TG
 el
-Jt
-Jt
-Jt
+Jh
+Jh
+Jh
 st
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
+Jh
+Jh
+Jh
+Jh
+Jh
+Jh
 Js
 Ly
 aU
@@ -491,16 +598,16 @@ aU
 (10,1,1) = {"
 aU
 dq
-Jt
-Jt
+Jh
+Jh
 zz
 zk
 Et
-Jt
+Pe
 SR
-wP
-wP
-qS
+ow
+Jh
+Yg
 th
 yl
 aU
@@ -510,15 +617,15 @@ aU
 (11,1,1) = {"
 aU
 aU
-Jt
+Jh
 Oi
+iT
+iT
+te
+te
 te
 Vq
-te
 RK
-wP
-wP
-el
 wP
 qS
 hY
@@ -529,15 +636,15 @@ aU
 (12,1,1) = {"
 aU
 aU
-Jt
+Jh
 wg
 te
 Qj
 te
+te
+Il
+QI
 RK
-wP
-qS
-wP
 wP
 wP
 hY
@@ -548,16 +655,16 @@ aU
 (13,1,1) = {"
 aU
 aU
-Jt
-Jt
+Jh
+Jh
 OM
 yW
 Kh
 Jt
-FK
-wP
-qS
-wP
+gi
+Pk
+Jh
+Zh
 gH
 aU
 aU
@@ -568,12 +675,12 @@ aU
 aU
 aU
 aU
-Jt
-Jt
-Jt
-Jt
-Jt
-aD
+Jh
+Jh
+Jh
+Jh
+Jh
+Jh
 Jh
 Jh
 Cu
