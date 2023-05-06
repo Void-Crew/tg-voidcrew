@@ -36,10 +36,9 @@
 /turf/open/floor/carpet/red,
 /area/shuttle/voidcrew/phalanx/chapel)
 "az" = (
-/obj/machinery/light,
 /obj/structure/cable,
-/turf/open/floor/iron,
-/area/shuttle/voidcrew/phalanx/hallway/central)
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/phalanx/engineering/storage)
 "aA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -297,8 +296,8 @@
 	},
 /area/shuttle/voidcrew/phalanx/hallway/central)
 "dM" = (
-/obj/machinery/firealarm/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron,
 /area/shuttle/voidcrew/phalanx/cafeteria)
 "dN" = (
@@ -429,9 +428,11 @@
 /turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle/voidcrew/phalanx/nanites)
 "fa" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/shuttle/voidcrew/phalanx/chapel)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/structure/cable,
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/shuttle/voidcrew/phalanx/engineering/storage)
 "fb" = (
 /obj/machinery/fax{
 	fax_name = "Phalanx Fax";
@@ -743,7 +744,6 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/voidcrew/phalanx/medbay/morgue)
 "jE" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/components/trinary/filter/atmos/n2{
 	dir = 8
 	},
@@ -1067,7 +1067,6 @@
 /turf/open/floor/engine/n2,
 /area/shuttle/voidcrew/phalanx/engineering/atmospherics)
 "oB" = (
-/obj/structure/cable,
 /obj/machinery/door/airlock/engineering,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/general,
 /turf/open/floor/engine,
@@ -1105,7 +1104,7 @@
 /area/shuttle/voidcrew/phalanx/medbay)
 "pg" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
-/turf/open/floor/mineral/titanium/tiled/blue,
+/turf/open/floor/plating,
 /area/shuttle/voidcrew/phalanx/medbay)
 "pl" = (
 /obj/machinery/light{
@@ -2075,14 +2074,6 @@
 /obj/structure/window/reinforced/plasma/spawner/directional/north,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/phalanx/engineering)
-"Ds" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/iron,
-/area/shuttle/voidcrew/phalanx/hallway/central)
 "Dv" = (
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
@@ -2453,8 +2444,7 @@
 /turf/open/floor/mineral/titanium/tiled/purple,
 /area/shuttle/voidcrew/phalanx/nanites)
 "JL" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/shuttle,
+/obj/effect/spawner/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/phalanx/cafeteria)
 "JM" = (
@@ -2571,7 +2561,6 @@
 /turf/open/floor/engine,
 /area/shuttle/voidcrew/phalanx/engineering/atmospherics)
 "Lg" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/components/trinary/filter/atmos/o2{
 	dir = 8
 	},
@@ -2725,7 +2714,7 @@
 /area/shuttle/voidcrew/phalanx/cargo/mining)
 "NC" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
-/turf/open/floor/mineral/titanium/tiled/purple,
+/turf/open/floor/plating,
 /area/shuttle/voidcrew/phalanx/nanites)
 "NE" = (
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
@@ -2908,6 +2897,7 @@
 /obj/machinery/door/airlock/engineering,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/general,
+/obj/structure/cable,
 /turf/open/floor/engine,
 /area/shuttle/voidcrew/phalanx/engineering/storage)
 "QK" = (
@@ -3744,7 +3734,7 @@ QI
 kP
 eM
 eM
-kP
+fa
 Zf
 oZ
 oZ
@@ -3836,7 +3826,7 @@ jb
 wh
 La
 qz
-fF
+az
 yH
 lh
 UL
@@ -4218,8 +4208,8 @@ De
 kE
 xE
 Qu
-Ds
-az
+aA
+Wo
 iw
 lq
 kL
@@ -4314,8 +4304,8 @@ AI
 Rt
 Kj
 Qu
-Ds
-az
+aA
+Wo
 iw
 kR
 bg
@@ -4732,7 +4722,7 @@ dM
 JL
 Im
 Yv
-fa
+lM
 KC
 Om
 WC
