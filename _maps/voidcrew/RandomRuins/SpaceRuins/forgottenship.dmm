@@ -868,6 +868,9 @@
 /obj/effect/mob_spawn/ghost_role/human/syndicatespace{
 	dir = 8
 	},
+/obj/item/storage/pod/directional/north{
+	unlocked = 1
+	},
 /turf/open/floor/carpet/orange,
 /area/ruin/space/has_grav/syndicate_forgotten_ship/crew)
 "cn" = (
@@ -1279,6 +1282,9 @@
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
 /obj/item/clothing/glasses/sunglasses,
+/obj/item/storage/pod/directional/east{
+	unlocked = 1
+	},
 /turf/open/floor/carpet/red,
 /area/ruin/space/has_grav/syndicate_forgotten_ship/crew)
 "dd" = (
@@ -3089,6 +3095,9 @@
 "sb" = (
 /obj/effect/mob_spawn/ghost_role/human/syndicatespace{
 	dir = 8
+	},
+/obj/item/storage/pod/directional/south{
+	unlocked = 1
 	},
 /turf/open/floor/carpet,
 /area/ruin/space/has_grav/syndicate_forgotten_ship/crew)
