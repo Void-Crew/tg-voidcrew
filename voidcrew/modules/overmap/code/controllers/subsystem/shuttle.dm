@@ -36,21 +36,21 @@
 /client/add_admin_verbs()
 	. = ..()
 	add_verb(src, list(
-		PROC_REF(respawn_ship),
-		PROC_REF(spawn_specific_ship),
-		PROC_REF(initiate_jump),
-		PROC_REF(cancel_jump),
-		PROC_REF(team_panel),
+		/client/proc/respawn_ship,
+		/client/proc/spawn_specific_ship,
+		/client/proc/initiate_jump,
+		/client/proc/cancel_jump,
+		/client/proc/team_panel,
 	))
 
 /client/remove_admin_verbs()
 	. = ..()
 	remove_verb(src, list(
-		PROC_REF(respawn_ship),
-		PROC_REF(spawn_specific_ship),
-		PROC_REF(initiate_jump),
-		PROC_REF(cancel_jump),
-		PROC_REF(team_panel),
+		/client/proc/respawn_ship,
+		/client/proc/spawn_specific_ship,
+		/client/proc/initiate_jump,
+		/client/proc/cancel_jump,
+		/client/proc/team_panel,
 	))
 
 #define RESPAWN_FORCE "Force Respawn"
