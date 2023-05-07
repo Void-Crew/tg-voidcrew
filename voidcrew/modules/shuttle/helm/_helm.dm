@@ -193,7 +193,7 @@
 
 /obj/machinery/computer/helm/proc/do_jump()
 	current_ship?.ship_announce("Bluespace Jump Initiated.")
-	current_ship.shuttle.intoTheSunset()
+	current_ship.destroy_ship(TRUE)
 
 /obj/machinery/computer/helm/connect_to_shuttle(mapload, obj/docking_port/mobile/voidcrew/port, obj/docking_port/stationary/dock)
 	if(!istype(port))
