@@ -26,6 +26,12 @@
 "aL" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/voidcrew/tram/cargo)
+"aN" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/shipping_container/nthi,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
 "aO" = (
 /obj/structure/industrial_lift/tram/subfloor/window,
 /obj/structure/window/reinforced/tram/front{
@@ -253,6 +259,12 @@
 	},
 /turf/open/floor/wood,
 /area/shuttle/voidcrew/tram/bridge)
+"gx" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/shipping_container/cybersun,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
 "gA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/noslip/tram_plate/energized,
@@ -762,6 +774,7 @@
 	specific_lift_id = "tramship"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/shipping_container/nakamura,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/tram/hallway/tram)
 "rD" = (
@@ -989,7 +1002,7 @@
 /area/shuttle/voidcrew/tram/hallway/starboard)
 "xn" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/random/structure/closet_maintenance,
+/obj/effect/spawner/random/structure/girder,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/tram/atmos)
 "xq" = (
@@ -1293,6 +1306,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable/layer1,
 /obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
 /turf/open/floor/iron/smooth_half,
 /area/shuttle/voidcrew/tram/engineering)
 "ET" = (
@@ -1721,6 +1737,12 @@
 	},
 /turf/open/floor/pod/light,
 /area/shuttle/voidcrew/tram/hallway/starboard)
+"Qz" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/shipping_container/nanotrasen,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
 "QF" = (
 /obj/structure/cable,
 /obj/machinery/power/shuttle_engine/ship/electric{
@@ -1737,6 +1759,14 @@
 	},
 /turf/open/floor/iron/white,
 /area/shuttle/voidcrew/tram/medbay)
+"QU" = (
+/obj/machinery/computer/order_console/mining/golem{
+	name = "naval mining equipment vendor"
+	},
+/obj/item/mining_voucher,
+/obj/item/mining_voucher,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
 "QX" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/n2{
 	dir = 8
@@ -2082,7 +2112,7 @@
 "XR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/random/structure/girder,
+/obj/effect/spawner/random/structure/closet_maintenance,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/tram/atmos)
 "XW" = (
@@ -2100,6 +2130,8 @@
 /area/shuttle/voidcrew/tram/loading)
 "Yv" = (
 /obj/structure/closet/crate,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/voidcrew/tram/cargo)
 "Za" = (
@@ -2505,7 +2537,7 @@ wy
 rf
 ry
 xq
-rf
+Qz
 pC
 CB
 Sg
@@ -2569,9 +2601,9 @@ sX
 Ax
 xx
 rf
+aN
 xq
-xq
-rf
+gx
 pC
 vx
 vB
@@ -2895,7 +2927,7 @@ Yv
 Gm
 xY
 xY
-VS
+QU
 Ax
 IB
 gA
