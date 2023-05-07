@@ -26,7 +26,7 @@
 	mob_spawn_list = list(
 //		/mob/living/simple_animal/hostile/asteroid/whitesands/ranged/hunter = 5,
 //		/mob/living/simple_animal/hostile/asteroid/whitesands/ranged/gunslinger = 5,
-		/mob/living/basic/giant_spider/wasteland = 5,
+		/mob/living/basic/giant_spider/wasteland = 1,
 		/mob/living/basic/giant_spider/tarantula/wasteland = 1,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/wasteland = 3
 	)
@@ -67,7 +67,7 @@
 		///mob/living/simple_animal/hostile/asteroid/whitesands/ranged/hunter = 10,
 		///mob/living/simple_animal/hostile/asteroid/whitesands/ranged/gunslinger = 7,
 		/mob/living/simple_animal/hostile/hivebot/rapid/wasteland = 5,
-		/mob/living/basic/giant_spider/wasteland = 5,
+		/mob/living/basic/giant_spider/wasteland = 1,
 		/mob/living/basic/giant_spider/tarantula/wasteland = 1
 	)
 
@@ -158,7 +158,7 @@
 	flora_spawn_chance = 1
 	mob_spawn_chance = 5
 	mob_spawn_list = list(
-		/mob/living/basic/giant_spider/tarantula/wasteland = 10,
+		/mob/living/basic/giant_spider/tarantula/wasteland = 1,
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/wasteland = 20,
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/ancient/wasteland = 15,
 		/obj/structure/spawner/ice_moon/demonic_portal/blobspore = 1,
