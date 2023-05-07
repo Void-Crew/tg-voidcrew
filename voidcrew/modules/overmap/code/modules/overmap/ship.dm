@@ -1,3 +1,6 @@
+///Threshold above which it uses the ship sprites instead of the shuttle sprites
+#define SHIP_SIZE_THRESHOLD 150
+
 #define SHIP_RUIN (10 MINUTES)
 #define SHIP_DELETE (10 MINUTES)
 #define SHIP_VIEW_RANGE 4
@@ -102,6 +105,9 @@
 
 	ship_team = new()
 	ship_team.name = template.name
+	faction_prefix = template.faction_prefix
+	ship_team.faction_prefix = faction_prefix
+	ship_team.ship = src
 
 	//now build the job slots.
 	job_slots = source_template.assemble_job_slots()
@@ -110,6 +116,7 @@
 	ship_account = new(newname = ship_team.name, job = job_slots[1], player_account = FALSE)
 
 	display_name = "[source_template.faction_prefix] [name]"
+	update_ship_color()
 	/*
 	map_name = "overmap_[REF(src)]_map"
 
@@ -182,6 +189,21 @@
 
 	cam_screen.vis_contents = visible_turfs
 	cam_background.fill_rect(1, 1, size_x, size_y)
+
+/**
+  * Updates the ships icon to make it easier to distinguish between factions
+  */
+/obj/structure/overmap/ship/proc/update_ship_color()
+	switch(faction_prefix)
+		if(SYNDICATE_SHIP)
+			color = "#F10303"
+		if(NANOTRASEN_SHIP)
+			color = "#115188"
+		if(HOSTILE_SHIP)
+			color = "#6E0202"
+		if(NEUTRAL_SHIP)
+			color = "#DDDDDD"
+	add_atom_colour(color, FIXED_COLOUR_PRIORITY)
 
 /// Resets the ships thrust back to zero
 /obj/structure/overmap/ship/proc/reset_thrust()
@@ -546,6 +568,18 @@
 	mass = .
 	update_icon_state()
 
+/obj/structure/overmap/ship/update_icon_state()
+	if(mass < SHIP_SIZE_THRESHOLD)
+		base_icon_state = "shuttle"
+	else
+		base_icon_state = "ship"
+	if(!is_still())
+		icon_state = "[base_icon_state]_moving"
+		dir = get_heading()
+	else
+		icon_state = base_icon_state
+	return ..()
+
 /**
   * Calculates the average fuel fullness of all engines.
   */
@@ -679,6 +713,7 @@
 	else
 		accelerate(n_dir, acceleration_speed * (percentage / 100))
 
+#undef SHIP_SIZE_THRESHOLD
 
 #undef SHIP_RUIN
 #undef SHIP_DELETE

@@ -351,7 +351,7 @@
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle/voidcrew/phalanx/medbay)
 "ei" = (
-/obj/machinery/suit_storage_unit/captain,
+/obj/machinery/suit_storage_unit/ert/commander,
 /turf/open/floor/wood,
 /area/shuttle/voidcrew/phalanx/bridge/captain)
 "er" = (
@@ -830,7 +830,7 @@
 /area/shuttle/voidcrew/phalanx/hallway/aft)
 "kx" = (
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/machinery/suit_storage_unit/engine,
+/obj/machinery/suit_storage_unit/ert/engineer,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/phalanx/engineering)
 "kA" = (
@@ -857,7 +857,7 @@
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle/voidcrew/phalanx/medbay)
 "kM" = (
-/obj/machinery/vending/security,
+/obj/machinery/vending/security/marine/solgov,
 /turf/open/floor/engine,
 /area/shuttle/voidcrew/phalanx/security)
 "kN" = (
@@ -872,7 +872,7 @@
 "kR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/machinery/suit_storage_unit/medical,
+/obj/machinery/suit_storage_unit/ert/medic,
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle/voidcrew/phalanx/medbay)
 "kU" = (
@@ -893,7 +893,7 @@
 "lq" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/machinery/suit_storage_unit/medical,
+/obj/machinery/suit_storage_unit/ert/medic,
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle/voidcrew/phalanx/medbay)
 "ly" = (
@@ -1429,7 +1429,7 @@
 /obj/structure/reagent_dispensers/wall/peppertank{
 	pixel_x = 32
 	},
-/obj/machinery/suit_storage_unit/security,
+/obj/machinery/suit_storage_unit/ert/security,
 /turf/open/floor/engine,
 /area/shuttle/voidcrew/phalanx/security)
 "tY" = (
@@ -1775,7 +1775,7 @@
 /turf/open/floor/engine,
 /area/shuttle/voidcrew/phalanx/engineering/storage)
 "yL" = (
-/obj/machinery/suit_storage_unit/security,
+/obj/machinery/suit_storage_unit/ert/security,
 /turf/open/floor/engine,
 /area/shuttle/voidcrew/phalanx/security)
 "yQ" = (
@@ -2122,6 +2122,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
+/obj/machinery/vending/security/marine/solgov,
 /turf/open/floor/engine,
 /area/shuttle/voidcrew/phalanx/security)
 "Ed" = (
@@ -4914,9 +4915,9 @@ uf
 rD
 Eu
 qm
-Eu
+kM
 Ec
-Eu
+kM
 fA
 tY
 tY

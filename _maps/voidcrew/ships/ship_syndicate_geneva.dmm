@@ -1439,7 +1439,7 @@
 	name = "professor's locker"
 	},
 /obj/item/clothing/suit/armor/vest/capcarapace/syndicate,
-/obj/item/clothing/head/hos/beret/syndicate,
+/obj/item/clothing/head/hats/hos/beret/syndicate,
 /obj/item/storage/medkit/tactical,
 /obj/item/card/emag,
 /turf/open/floor/wood,

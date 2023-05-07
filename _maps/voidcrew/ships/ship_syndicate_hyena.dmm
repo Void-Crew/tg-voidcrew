@@ -260,7 +260,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/vending/security,
+/obj/machinery/vending/security/marine,
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/voidcrew/hyena/armory)
@@ -322,7 +322,7 @@
 /obj/item/pen/edagger,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/secure_closet/hos,
-/obj/item/clothing/head/hats/hos/syndicate,
+/obj/item/clothing/head/hats/hos/cap/syndicate,
 /turf/open/floor/carpet/black,
 /area/shuttle/voidcrew/hyena/bridge)
 "hv" = (
@@ -1797,7 +1797,7 @@
 /area/shuttle/voidcrew/hyena/maintenance/port)
 "OX" = (
 /obj/effect/turf_decal/bot_white,
-/obj/machinery/vending/security,
+/obj/machinery/vending/security/marine,
 /turf/open/floor/iron/dark,
 /area/shuttle/voidcrew/hyena/armory)
 "Pw" = (
