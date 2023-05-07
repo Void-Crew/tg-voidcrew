@@ -1,5 +1,5 @@
 /datum/map_template/ruin/reebe
-	prefix = "_maps/RandomRuins/ReebeRuins/"
+	prefix = "_maps/voidcrew/RandomRuins/ReebeRuins/"
 	allow_duplicates = FALSE
 	cost = 5
 

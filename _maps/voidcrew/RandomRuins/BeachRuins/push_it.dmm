@@ -59,7 +59,7 @@
 /obj/structure/chair/sofa/right,
 /obj/item/research_notes/loot/medium,
 /mob/living/simple_animal/hostile/russian/ranged/trooper,
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/iron/vaporwave,
 /area/ruin/powered)
 "kf" = (
 /obj/structure/mineral_door/wood,
@@ -101,7 +101,7 @@
 /turf/open/floor/plastic,
 /area/ruin/powered)
 "pY" = (
-/obj/item/clothing/head/chicken,
+/obj/item/clothing/head/costume/chicken,
 /turf/open/floor/carpet/cyan,
 /area/ruin/powered)
 "qg" = (
@@ -147,7 +147,7 @@
 /obj/machinery/chem_dispenser/drinks{
 	dir = 8
 	},
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/iron/vaporwave,
 /area/ruin/powered)
 "xr" = (
 /obj/structure/chair/office/light,
@@ -234,7 +234,7 @@
 "Ha" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/donkpockets,
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/iron/vaporwave,
 /area/ruin/powered)
 "HH" = (
 /obj/machinery/vending/hydroseeds,
@@ -249,7 +249,7 @@
 /turf/open/floor/plastic,
 /area/ruin/powered)
 "JH" = (
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/iron/vaporwave,
 /area/ruin/powered)
 "JQ" = (
 /obj/machinery/chem_heater,
@@ -271,17 +271,17 @@
 /area/ruin/powered)
 "MI" = (
 /obj/structure/chair/sofa/left,
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/iron/vaporwave,
 /area/ruin/powered)
 "Nh" = (
 /obj/structure/table/glass,
 /obj/machinery/microwave,
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/iron/vaporwave,
 /area/ruin/powered)
 "Oa" = (
 /obj/structure/chair/sofa/right,
 /obj/item/stack/spacecash/c1000,
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/iron/vaporwave,
 /area/ruin/powered)
 "Ou" = (
 /mob/living/simple_animal/hostile/russian/ranged/mosin,
@@ -351,7 +351,7 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass,
 /obj/item/reagent_containers/food/drinks/drinkingglass,
 /obj/item/stack/medical/suture,
-/turf/open/floor/plasteel/vaporwave,
+/turf/open/floor/iron/vaporwave,
 /area/ruin/powered)
 "Vb" = (
 /turf/template_noop,

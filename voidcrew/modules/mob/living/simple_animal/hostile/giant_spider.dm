@@ -1,6 +1,9 @@
 /mob/living/basic/giant_spider/tarantula/wasteland
 	faction = list("wasteland")
-	web_type = null
 /mob/living/basic/giant_spider/wasteland
 	faction = list("wasteland")
-	web_type = null
+
+/mob/living/basic/giant_spider/wasteland/Initialize(mapload)
+	. = ..()
+	ai_controller.set_blackboard_key(BB_SPIDER_WEB_ACTION, null)
+

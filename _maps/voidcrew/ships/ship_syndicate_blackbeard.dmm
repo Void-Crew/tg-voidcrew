@@ -982,7 +982,7 @@
 /turf/open/floor/catwalk_floor,
 /area/shuttle/voidcrew/blackbeard/bridge)
 "ZO" = (
-/obj/machinery/vending/security,
+/obj/machinery/vending/security/marine,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/voidcrew/blackbeard/equipment)
 

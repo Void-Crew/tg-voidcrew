@@ -29,6 +29,14 @@ SUBSYSTEM_DEF(overmap)
 
 	///List of all simulated ships
 	var/list/simulated_ships = list()
+	/// Timer ID of the timer used for telling which stage of an endround "jump" the ships are in
+	var/jump_timer
+	/// Current state of the jump
+	var/jump_mode = BS_JUMP_IDLE
+	/// Time taken for bluespace jump to begin after it is requested (in deciseconds)
+	var/jump_request_time = 6000
+	/// Time taken for a bluespace jump to complete after it initiates (in deciseconds)
+	var/jump_completion_time = 1200
 
 	var/datum/map_template/shuttle/voidcrew/initial_ship_template
 	var/obj/structure/overmap/ship/initial_ship
@@ -41,6 +49,50 @@ SUBSYSTEM_DEF(overmap)
 	spawn_initial_ship()
 
 	return SS_INIT_SUCCESS
+/*
+ * Bluespace jump procs
+ */
+
+/**
+ * ## request_jump
+ *
+ * Requests a bluespace jump, which, after jump_request_time deciseconds, will initiate a bluespace jump.
+ *
+ * Arguments:
+ * * modifiers - (Optional) Modifies the length of the jump request time (defaults to 1)
+ */
+/datum/controller/subsystem/overmap/proc/request_jump(modifier = 1)
+	jump_mode = BS_JUMP_CALLED
+	jump_timer = addtimer(CALLBACK(src, .proc/initiate_jump), jump_request_time * modifier, TIMER_STOPPABLE)
+	priority_announce("Preparing for jump. ETD: [jump_request_time * modifier / 600] minutes.", null, null, "Priority")
+
+/**
+ * ##cancel_jump
+ *
+ * Cancels a currently requested bluespace jump.
+ * Can only be done after the jump has been requested, but before the jump has actually begun.
+ */
+/datum/controller/subsystem/overmap/proc/cancel_jump()
+	if(jump_mode != BS_JUMP_CALLED)
+		return
+	deltimer(jump_timer)
+	jump_mode = BS_JUMP_IDLE
+	priority_announce("Bluespace jump cancelled.", null, null, "Priority")
+
+/**
+ * ##initiate_jump
+ *
+ * Initiates a bluespace jump, ending the round after a delay of jump_completion_time deciseconds.
+ * This cannot be interrupted by conventional means.
+ */
+/datum/controller/subsystem/overmap/proc/initiate_jump()
+	jump_mode = BS_JUMP_INITIATED
+	for(var/obj/docking_port/mobile/voidcrew/mobile_port as anything in SSshuttle.mobile_docking_ports)
+		mobile_port.hyperspace_sound(HYPERSPACE_WARMUP, mobile_port.shuttle_areas)
+		mobile_port.on_emergency_launch()
+
+	priority_announce("Jump initiated. ETA: [jump_completion_time / 600] minutes.", null, null, "Priority")
+	jump_timer = addtimer(VARSET_CALLBACK(src, jump_mode, BS_JUMP_COMPLETED), jump_completion_time)
 
 /datum/controller/subsystem/overmap/proc/create_map()
 	// creates the overmap area and sets it up
@@ -150,6 +202,12 @@ SUBSYSTEM_DEF(overmap)
 			new event_type(turf_to_spawn)
 
 /datum/controller/subsystem/overmap/proc/setup_planets()
+	var/list/planets = list()
+	for(var/datum/overmap/planet/planet_type as anything in subtypesof(/datum/overmap/planet))
+		if(initial(planet_type.spawn_rate) > 0)
+			planets += planet_type
+
+
 	var/list/orbits = list()
 	for (var/i in 2 to LAZYLEN(radius_tiles))
 		orbits += "[i]"
@@ -163,7 +221,8 @@ SUBSYSTEM_DEF(overmap)
 		if (!turf_for_planet || !istype(turf_for_planet))
 			orbits -= "[selected_orbit]" // this one is full
 			continue
-		var/planet_type = pick(subtypesof(/datum/overmap/planet))
+
+		var/planet_type = pick(planets)
 		var/obj/structure/overmap/planet/planet_to_spawn = new
 		planet_to_spawn.planet = planet_type
 		planet_to_spawn.forceMove(turf_for_planet)

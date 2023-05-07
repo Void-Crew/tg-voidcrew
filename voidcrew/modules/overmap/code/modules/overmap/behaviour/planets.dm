@@ -102,7 +102,8 @@
 	color = COLOR_GRAY
 	icon_state = "asteroid"
 
-	spawn_rate = 30
+	//spawn_rate = 30
+	spawn_rate = -1
 	mapgen = /datum/map_generator/cave_generator/asteroid
 
 /datum/overmap/planet/space // not a planet but freak off!!
@@ -118,5 +119,6 @@
 	desc = "A ship appears to be docked here."
 	color = null
 	icon_state = "object"
+	spawn_rate = -1
 
 

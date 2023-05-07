@@ -27,12 +27,13 @@
 
 /obj/structure/overmap/planet/Initialize(mapload)
 	. = ..()
-	var/datum/overmap/planet/planet_info = new planet
-	name = planet_info.name
-	desc = planet_info.desc
-	icon_state = planet_info.icon_state
-	color = planet_info.color
-	qdel(planet_info)
+	if(planet)
+		var/datum/overmap/planet/planet_info = new planet
+		name = planet_info.name
+		desc = planet_info.desc
+		icon_state = planet_info.icon_state
+		color = planet_info.color
+		qdel(planet_info)
 
 /obj/structure/overmap/planet/lava
 	planet = /datum/overmap/planet/lava

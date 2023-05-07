@@ -26,7 +26,7 @@
 		var/datum/map_template/shuttle/voidcrew/template = SSmapping.ship_purchase_list[tgui_input_list(src, "Please select ship to purchase!", "Welcome, [used_name].", SSmapping.ship_purchase_list)]
 		if(!template)
 			return select_ship()
-		if(!client.remove_ship_cost(initial(template.faction_prefix), initial(template.part_cost)))
+		if(!client.remove_ship_cost(initial(template.faction_prefix), initial(template.part_cost)) && !CONFIG_GET(flag/free_ships))
 			tgui_alert(client, "You lack the parts needed to build this ship! (Required: [initial(template.part_cost)] [initial(template.faction_prefix)] part\s)")
 			return
 
