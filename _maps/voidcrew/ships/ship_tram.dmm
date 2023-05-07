@@ -26,12 +26,6 @@
 "aL" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/voidcrew/tram/cargo)
-"aN" = (
-/obj/structure/industrial_lift/tram/white,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/shipping_container/nthi,
-/turf/open/floor/plating,
-/area/shuttle/voidcrew/tram/hallway/tram)
 "aO" = (
 /obj/structure/industrial_lift/tram/subfloor/window,
 /obj/structure/window/reinforced/tram/front{
@@ -163,6 +157,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/tram/airlock/starboard)
+"dp" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/shipping_container/nthi,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
 "eb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/directional/north,
@@ -259,12 +259,6 @@
 	},
 /turf/open/floor/wood,
 /area/shuttle/voidcrew/tram/bridge)
-"gx" = (
-/obj/structure/industrial_lift/tram/white,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/shipping_container/cybersun,
-/turf/open/floor/noslip/tram_plate/energized,
-/area/shuttle/voidcrew/tram/hallway/tram)
 "gA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/noslip/tram_plate/energized,
@@ -1217,6 +1211,12 @@
 "Ch" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/voidcrew/tram/dorms)
+"Cq" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/shipping_container/cybersun,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
 "CB" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Tram Station"
@@ -1388,6 +1388,10 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/tram/atmos)
+"HI" = (
+/obj/structure/table/reinforced/titaniumglass,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
 "HR" = (
 /obj/effect/turf_decal/stripes{
 	dir = 8
@@ -1485,6 +1489,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/tram/hallway/tram)
+"Kj" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/shipping_container/nanotrasen,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
 "KL" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -1499,6 +1509,11 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/tram/hallway/tram)
+"Lb" = (
+/obj/structure/table/reinforced/titaniumglass,
+/obj/machinery/recharger,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
 "Lh" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -1693,6 +1708,7 @@
 	name = "Window Shutters"
 	},
 /obj/machinery/light/directional/west,
+/obj/structure/table/reinforced/titaniumglass,
 /turf/open/floor/wood,
 /area/shuttle/voidcrew/tram/bridge)
 "PN" = (
@@ -1737,12 +1753,6 @@
 	},
 /turf/open/floor/pod/light,
 /area/shuttle/voidcrew/tram/hallway/starboard)
-"Qz" = (
-/obj/structure/industrial_lift/tram/white,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/shipping_container/nanotrasen,
-/turf/open/floor/noslip/tram_plate/energized,
-/area/shuttle/voidcrew/tram/hallway/tram)
 "QF" = (
 /obj/structure/cable,
 /obj/machinery/power/shuttle_engine/ship/electric{
@@ -1759,14 +1769,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/shuttle/voidcrew/tram/medbay)
-"QU" = (
-/obj/machinery/computer/order_console/mining/golem{
-	name = "naval mining equipment vendor"
-	},
-/obj/item/mining_voucher,
-/obj/item/mining_voucher,
-/turf/open/floor/pod/light,
-/area/shuttle/voidcrew/tram/hallway/port)
 "QX" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/n2{
 	dir = 8
@@ -1852,6 +1854,14 @@
 	},
 /turf/open/floor/wood,
 /area/shuttle/voidcrew/tram/dorms)
+"Sy" = (
+/obj/machinery/computer/order_console/mining/golem{
+	name = "naval mining equipment vendor"
+	},
+/obj/item/mining_voucher,
+/obj/item/mining_voucher,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
 "SJ" = (
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/voidcrew/tram/dorms)
@@ -2537,7 +2547,7 @@ wy
 rf
 ry
 xq
-Qz
+Kj
 pC
 CB
 Sg
@@ -2601,9 +2611,9 @@ sX
 Ax
 xx
 rf
-aN
+dp
 xq
-gx
+Cq
 pC
 vx
 vB
@@ -2927,7 +2937,7 @@ Yv
 Gm
 xY
 xY
-QU
+Sy
 Ax
 IB
 gA
@@ -3143,7 +3153,7 @@ Nr
 "}
 (45,1,1) = {"
 XW
-Kf
+Lb
 op
 hv
 Kf
@@ -3165,7 +3175,7 @@ Nr
 "}
 (46,1,1) = {"
 XW
-Kf
+HI
 Kf
 aQ
 So
