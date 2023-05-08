@@ -142,6 +142,9 @@
 	log_manifest(character.mind.key, character.mind, character, latejoin = TRUE)
 	log_shuttle("[character.mind.key] / [character.mind.name] has joined [joined_ship.name] as [job.title]")
 
+	if(joined_ship.deletion_timer)
+		joined_ship.end_deletion_timer()
+
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_CREWMEMBER_JOINED, character, job.title)
 
 /**
