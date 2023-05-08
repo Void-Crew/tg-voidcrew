@@ -155,15 +155,9 @@
 	message_admins("\[SHUTTLE]: [current_ship?.name] has been turned into a ruin!")
 	log_admin("\[SHUTTLE]: [current_ship?.name] has been turned into a ruin!")
 
-	qdel(src, force = TRUE)
+	qdel(current_ship)
 
 /obj/docking_port/mobile/voidcrew/proc/recalculate_shuttle_areas()
 	for(var/area/area as anything in shuttle_areas)
 		area.area_flags |= VALID_TERRITORY
 	// TODO - UPSTREAM - RECALCULATE BOUNDS
-
-
-// TODO - remove this and figure out why lighting doesn't update correctly
-/area/afterShuttleMove(new_parallax_dir)
-	. = ..()
-	create_area_lighting_objects()

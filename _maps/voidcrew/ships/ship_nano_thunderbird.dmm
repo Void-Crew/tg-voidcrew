@@ -252,7 +252,7 @@
 /area/shuttle/voidcrew/thunderbird/dormitories)
 "oU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/vending/security,
+/obj/machinery/vending/security/marine/solgov,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/voidcrew/thunderbird/security)
 "po" = (
@@ -267,7 +267,7 @@
 /area/shuttle/voidcrew/thunderbird/dormitories)
 "pO" = (
 /obj/effect/turf_decal/tile/blue,
-/obj/machinery/suit_storage_unit/captain,
+/obj/machinery/suit_storage_unit/ert/commander,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/voidcrew/thunderbird/bridge)
 "pR" = (
@@ -455,7 +455,7 @@
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/window/reinforced/spawner,
 /obj/machinery/door/window/left/directional/east,
-/obj/machinery/suit_storage_unit/engine,
+/obj/machinery/suit_storage_unit/ert/engineer,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/thunderbird/engineering)
 "Cj" = (
@@ -520,7 +520,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/voidcrew/thunderbird/bridge)
 "Gw" = (
-/obj/machinery/suit_storage_unit/security,
+/obj/machinery/suit_storage_unit/ert/security,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/voidcrew/thunderbird/security)
 "Gy" = (
@@ -566,7 +566,7 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/machinery/door/window/left/directional/east,
-/obj/machinery/suit_storage_unit/engine,
+/obj/machinery/suit_storage_unit/ert/engineer,
 /turf/open/floor/plating,
 /area/shuttle/voidcrew/thunderbird/engineering)
 "Km" = (
@@ -807,7 +807,7 @@
 /area/shuttle/voidcrew/thunderbird/hallway)
 "Yv" = (
 /obj/effect/turf_decal/tile/blue,
-/obj/machinery/suit_storage_unit/medical,
+/obj/machinery/suit_storage_unit/ert/medic,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/voidcrew/thunderbird/dormitories)
 "YX" = (

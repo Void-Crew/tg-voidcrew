@@ -415,13 +415,35 @@
 	var/datum/dummy_space_reservation/safeguard = new(low_x, low_y, high_x, high_y, z_value)
 
 	var/area/space_area = GLOB.areas_by_type[/area/space]
-	for(var/turf/turf as anything in get_block())
-		//Reset turf
-		turf.empty(RESERVED_TURF_TYPE, RESERVED_TURF_TYPE, null, TRUE)
+
+	var/list/turf/block_turfs = get_block()
+
+	for(var/turf/turf as anything in block_turfs)
+		// don't waste time trying to qdelete the lighting object
+		for(var/datum/thing in (turf.contents - turf.lighting_object))
+			qdel(thing)
+			// DO NOT CHECK_TICK HERE. IT CAN CAUSE ITEMS TO GET LEFT BEHIND
+			// THIS IS REALLY IMPORTANT FOR CONSISTENCY. SORRY ABOUT THE LAG SPIKE
+
+	for(var/turf/turf as anything in block_turfs)
+		// Reset turf
+		turf.empty(RESERVED_TURF_TYPE, RESERVED_TURF_TYPE, null, CHANGETURF_IGNORE_AIR|CHANGETURF_DEFER_CHANGE)
 		// Reset area
 		var/area/old_area = get_area(turf)
 		space_area.contents += turf
 		turf.change_area(old_area, space_area)
+		CHECK_TICK
+
+	for(var/turf/turf as anything in block_turfs)
+		turf.AfterChange(CHANGETURF_IGNORE_AIR|CHANGETURF_RECALC_ADJACENT)
+
+		// we don't need to smooth anything in the reserve, because it's empty, nor do we need to check its starlight.
+		// only the sides need to do that. this saved ~4-5% of reservation clear times in testing
+		if(turf.x != low_x && turf.x != high_x && turf.y != low_y && turf.y != high_y)
+			continue
+
+		QUEUE_SMOOTH(turf)
+		QUEUE_SMOOTH_NEIGHBORS(turf)
 		CHECK_TICK
 
 	qdel(safeguard)
