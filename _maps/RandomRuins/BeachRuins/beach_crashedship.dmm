@@ -1,5 +1,5 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"ap" = (
+"aY" = (
 /obj/structure/showcase/machinery/tv{
 	icon_state = "computer_broken";
 	desc = "There isn't much power left to monitor...";
@@ -9,26 +9,87 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/carpet/blue,
 /area/ruin/unpowered)
-"aT" = (
-/obj/machinery/power/shuttle_engine/propulsion{
+"ct" = (
+/obj/machinery/power/shuttle_engine/heater{
 	dir = 8
 	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "crashedsurvey_window";
-	dir = 8
-	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"bv" = (
+"cH" = (
+/obj/structure/table/reinforced/titaniumglass,
+/obj/machinery/microwave,
+/turf/open/floor/wood,
+/area/ruin/unpowered)
+"cU" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "crashedsurvey_window"
+	},
 /obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"db" = (
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/wood,
+/area/ruin/unpowered)
+"dW" = (
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /obj/structure/cable,
+/obj/machinery/power/rtg/advanced,
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"ej" = (
+/obj/machinery/door/firedoor,
+/obj/effect/decal/cleanable/glass/titanium,
+/obj/structure/door_assembly/door_assembly_com{
+	base_name = "Bridge";
+	anchored = 1
+	},
+/obj/effect/mapping_helpers/broken_floor,
+/obj/structure/cable,
+/turf/open/floor/carpet/blue,
+/area/ruin/unpowered)
+"fa" = (
+/obj/machinery/light/directional/east,
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"fj" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "crashedsurvey_window";
 	dir = 1
 	},
+/obj/effect/spawner/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"cE" = (
+"gP" = (
+/obj/structure/cable,
+/obj/machinery/power/rtg/advanced,
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"hG" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/structure/cable,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "crashedsurvey_window";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"hL" = (
+/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/light/directional/north,
+/turf/open/floor/wood,
+/area/ruin/unpowered)
+"jc" = (
+/obj/structure/lattice/catwalk,
+/turf/open/water,
+/area/template_noop)
+"jt" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"lF" = (
 /obj/machinery/power/shuttle_engine/heater{
 	dir = 8
 	},
@@ -36,62 +97,52 @@
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"dr" = (
-/obj/machinery/exoscanner{
-	name = "rusty scanner array"
-	},
-/obj/structure/lattice/catwalk,
-/turf/open/water,
-/area/template_noop)
-"dI" = (
-/obj/machinery/power/shuttle_engine/propulsion{
-	dir = 8
-	},
-/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "crashedsurvey_window";
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"dZ" = (
-/turf/template_noop,
-/area/template_noop)
-"ef" = (
-/obj/machinery/door/airlock/external/glass,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"fG" = (
-/obj/structure/cable,
-/turf/open/floor/carpet/green,
-/area/ruin/unpowered)
-"iD" = (
-/obj/item/stack/cable_coil/cut,
-/turf/open/water,
-/area/template_noop)
-"iG" = (
+"lK" = (
 /obj/item/shard/titanium,
 /obj/item/stack/cable_coil/cut,
 /turf/open/water,
 /area/template_noop)
-"ki" = (
+"nd" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 8
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"mc" = (
+"nB" = (
+/obj/structure/cable,
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/wood,
+/area/ruin/unpowered)
+"nO" = (
+/obj/structure/frame/computer{
+	dir = 8
+	},
+/turf/open/floor/carpet/blue,
+/area/ruin/unpowered)
+"pw" = (
+/obj/machinery/door/airlock/maintenance/external{
+	name = "Maintenance"
+	},
+/obj/structure/cable,
+/obj/machinery/door/firedoor,
+/turf/open/floor/carpet/green,
+/area/ruin/unpowered)
+"pY" = (
 /obj/machinery/power/smes/engineering,
 /obj/structure/cable,
 /obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/ruin/unpowered)
-"mB" = (
+"rf" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
 /obj/structure/cable,
-/obj/machinery/door/airlock/grunge{
-	name = "Cabin"
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "crashedsurvey_cabin"
 	},
-/obj/machinery/door/firedoor,
-/turf/open/floor/wood,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
-"mZ" = (
+"rs" = (
 /obj/structure/showcase/machinery/tv{
 	icon_state = "computer_broken";
 	desc = "Uhh... you think this works? Seriously?";
@@ -100,58 +151,33 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/carpet/blue,
 /area/ruin/unpowered)
-"oz" = (
-/obj/effect/spawner/structure/window/reinforced/shuttle,
-/obj/structure/cable,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "crashedsurvey_window";
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"ps" = (
-/obj/effect/spawner/structure/window/reinforced/shuttle,
-/obj/structure/cable,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "crashedsurvey_window";
-	dir = 4
-	},
-/obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"pX" = (
-/obj/structure/frame/computer{
-	dir = 8
-	},
-/turf/open/floor/carpet/blue,
-/area/ruin/unpowered)
-"qZ" = (
+"sy" = (
+/obj/machinery/light/directional/west,
+/obj/machinery/holopad,
 /turf/open/floor/wood,
 /area/ruin/unpowered)
-"sA" = (
+"tI" = (
+/obj/structure/flora/rock/beach{
+	pixel_x = -12;
+	pixel_y = 9;
+	layer = 2.89
+	},
+/turf/open/water,
+/area/template_noop)
+"uT" = (
+/obj/structure/lattice,
+/turf/open/water,
+/area/template_noop)
+"vs" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
 /obj/structure/cable,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "crashedsurvey_cabin"
-	},
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"tl" = (
-/obj/machinery/power/shuttle_engine/propulsion{
-	dir = 8
-	},
-/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
-/obj/machinery/door/poddoor/shutters/preopen{
 	id = "crashedsurvey_window";
-	dir = 8
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"ty" = (
-/obj/structure/lattice/catwalk,
-/turf/open/water,
-/area/template_noop)
-"ug" = (
+"wj" = (
 /obj/item/bedsheet/centcom{
 	dir = 1
 	},
@@ -165,80 +191,70 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/wood,
 /area/ruin/unpowered)
-"uS" = (
-/obj/structure/cable,
+"xx" = (
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"vx" = (
-/obj/item/stack/sheet/mineral/titanium,
-/turf/open/water,
-/area/template_noop)
-"wa" = (
-/obj/structure/table/reinforced/titaniumglass,
-/obj/structure/cable,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
-/obj/item/reagent_containers/cup/glass/waterbottle/large,
-/obj/item/reagent_containers/cup/glass/waterbottle/large,
-/obj/item/reagent_containers/cup/glass/waterbottle/large,
-/turf/open/floor/wood,
-/area/ruin/unpowered)
-"xM" = (
-/obj/item/stack/sheet/iron/five,
-/obj/item/stack/cable_coil/five,
-/obj/effect/decal/cleanable/glass/titanium,
-/obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"xY" = (
-/obj/item/shard/titanium,
-/obj/machinery/button/door/directional/west{
-	name = "Window Shutters";
-	id = "crashedsurvey_window"
-	},
-/obj/item/stack/cable_coil/cut,
-/obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"ym" = (
-/turf/open/water,
-/area/template_noop)
-"yo" = (
-/obj/machinery/suit_storage_unit/captain,
-/turf/open/floor/wood,
-/area/ruin/unpowered)
-"AT" = (
-/obj/effect/spawner/random/structure/girder,
-/obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"Bd" = (
-/obj/structure/reagent_dispensers/watertank/high,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"Cg" = (
-/obj/structure/cable,
-/turf/open/floor/wood,
-/area/ruin/unpowered)
-"Ds" = (
+"yd" = (
 /obj/structure/sign/nanotrasen,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ruin/unpowered)
-"Ei" = (
-/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+"yn" = (
 /obj/structure/cable,
-/obj/machinery/power/rtg/advanced,
+/turf/open/floor/carpet/green,
+/area/ruin/unpowered)
+"zT" = (
+/obj/structure/cable,
+/obj/effect/mob_spawn/corpse/human/bridgeofficer,
+/turf/open/floor/carpet/green,
+/area/ruin/unpowered)
+"zX" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/structure/cable,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "crashedsurvey_window";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"EJ" = (
+"Am" = (
+/obj/structure/cable,
+/obj/machinery/power/terminal,
+/turf/open/floor/carpet/green,
+/area/ruin/unpowered)
+"AE" = (
 /obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/microwave,
+/obj/structure/cable,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
+/obj/item/reagent_containers/cup/glass/waterbottle/large,
+/obj/item/reagent_containers/cup/glass/waterbottle/large,
+/obj/item/reagent_containers/cup/glass/waterbottle/large,
 /turf/open/floor/wood,
 /area/ruin/unpowered)
-"EQ" = (
+"AI" = (
+/obj/machinery/power/shuttle_engine/propulsion{
+	dir = 8
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "crashedsurvey_window";
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"AX" = (
+/obj/machinery/suit_storage_unit/captain,
+/turf/open/floor/wood,
+/area/ruin/unpowered)
+"Bt" = (
+/obj/structure/reagent_dispensers/watertank/high,
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"BI" = (
 /obj/structure/showcase/machinery/tv{
 	icon_state = "computer_broken";
 	desc = "You can't navigate a broken-down husk anywhere.";
@@ -248,114 +264,42 @@
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"Gx" = (
+"Ci" = (
+/obj/item/stack/cable_coil/cut,
+/turf/open/water,
+/area/template_noop)
+"Cw" = (
 /obj/structure/cable,
 /obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/wood,
-/area/ruin/unpowered)
-"GP" = (
-/turf/closed/wall/mineral/titanium,
-/area/ruin/unpowered)
-"Hc" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ruin/unpowered)
-"Jx" = (
-/obj/machinery/vending/boozeomat/all_access,
-/obj/machinery/light/directional/north,
-/turf/open/floor/wood,
-/area/ruin/unpowered)
-"JY" = (
-/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"Kk" = (
+"CJ" = (
+/obj/effect/spawner/random/structure/girder,
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"Ej" = (
+/obj/machinery/power/shuttle_engine/propulsion{
+	dir = 8
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "crashedsurvey_window";
-	dir = 1
-	},
-/obj/effect/spawner/structure/window/reinforced/shuttle,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"KP" = (
-/obj/structure/cable,
-/obj/machinery/power/rtg/advanced,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"Lt" = (
-/turf/open/floor/carpet/green,
-/area/ruin/unpowered)
-"LV" = (
-/obj/structure/flora/rock/beach{
-	pixel_x = -12;
-	pixel_y = 9;
-	layer = 2.89
-	},
-/turf/open/water,
-/area/template_noop)
-"Nb" = (
-/obj/structure/cable,
-/obj/effect/mob_spawn/corpse/human/bridgeofficer,
-/turf/open/floor/carpet/green,
-/area/ruin/unpowered)
-"Ny" = (
-/obj/structure/cable,
-/obj/machinery/power/terminal,
-/turf/open/floor/carpet/green,
-/area/ruin/unpowered)
-"Ov" = (
-/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
-/obj/structure/cable,
-/obj/machinery/power/rtg/advanced,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"Pw" = (
-/obj/machinery/power/shuttle_engine/heater{
 	dir = 8
 	},
-/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
-"Qe" = (
-/obj/structure/lattice,
+"Es" = (
 /turf/open/water,
 /area/template_noop)
-"QE" = (
-/obj/machinery/power/shuttle_engine/heater{
-	dir = 8
+"HK" = (
+/obj/machinery/exoscanner{
+	name = "rusty scanner array"
 	},
-/obj/structure/window/reinforced/survival_pod/spawner/directional/east,
-/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"Re" = (
-/obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/wood,
-/area/ruin/unpowered)
-"SB" = (
-/obj/machinery/light/directional/east,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"Tq" = (
-/obj/machinery/light/directional/west,
-/obj/machinery/holopad,
-/turf/open/floor/wood,
-/area/ruin/unpowered)
-"TP" = (
-/obj/machinery/door/airlock/maintenance/external{
-	name = "Maintenance"
-	},
-/obj/structure/cable,
-/obj/machinery/door/firedoor,
-/turf/open/floor/carpet/green,
-/area/ruin/unpowered)
-"UV" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "crashedsurvey_window"
-	},
-/obj/effect/spawner/structure/window/reinforced/shuttle,
-/turf/open/floor/plating,
-/area/ruin/unpowered)
-"WZ" = (
+/obj/structure/lattice/catwalk,
+/turf/open/water,
+/area/template_noop)
+"IR" = (
 /obj/structure/cable,
 /obj/structure/fluff{
 	icon_state = "apc-b";
@@ -368,693 +312,750 @@
 /obj/structure/tank_holder/oxygen,
 /turf/open/floor/wood,
 /area/ruin/unpowered)
-"XJ" = (
-/obj/machinery/door/firedoor,
-/obj/effect/decal/cleanable/glass/titanium,
-/obj/structure/door_assembly/door_assembly_com{
-	base_name = "Bridge";
-	anchored = 1
+"IU" = (
+/obj/item/shard/titanium,
+/obj/machinery/button/door/directional/west{
+	name = "Window Shutters";
+	id = "crashedsurvey_window"
 	},
-/obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/carpet/blue,
-/area/ruin/unpowered)
-"XU" = (
+/obj/item/stack/cable_coil/cut,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
+"Jm" = (
+/obj/item/stack/sheet/mineral/titanium,
+/turf/open/water,
+/area/template_noop)
+"JO" = (
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"LQ" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ruin/unpowered)
+"MC" = (
+/turf/closed/wall/mineral/titanium,
+/area/ruin/unpowered)
+"MM" = (
+/turf/open/floor/carpet/green,
+/area/ruin/unpowered)
+"MV" = (
+/obj/structure/cable,
+/turf/open/floor/wood,
+/area/ruin/unpowered)
+"RE" = (
+/obj/machinery/door/airlock/external/glass,
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"Sa" = (
+/obj/item/stack/sheet/iron/five,
+/obj/item/stack/cable_coil/five,
+/obj/effect/decal/cleanable/glass/titanium,
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"SP" = (
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/obj/structure/cable,
+/obj/machinery/power/rtg/advanced,
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"Tn" = (
+/turf/template_noop,
+/area/template_noop)
+"Tu" = (
+/turf/open/floor/wood,
+/area/ruin/unpowered)
+"Vs" = (
+/obj/machinery/power/shuttle_engine/propulsion{
+	dir = 8
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "crashedsurvey_window";
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ruin/unpowered)
+"Xa" = (
+/obj/structure/cable,
+/obj/machinery/door/airlock/grunge{
+	name = "Cabin"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/wood,
+/area/ruin/unpowered)
 
 (1,1,1) = {"
-dZ
-dZ
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
+Tn
+Tn
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
 "}
 (2,1,1) = {"
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
 "}
 (3,1,1) = {"
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-dr
-dr
-dr
-ym
-ym
-ym
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+HK
+HK
+HK
+Es
+Es
+Es
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
 "}
 (4,1,1) = {"
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-Qe
-ty
-Qe
-ym
-ym
-ym
-ym
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+uT
+jc
+uT
+Es
+Es
+Es
+Es
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
 "}
 (5,1,1) = {"
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-Hc
-aT
-dI
-ef
-tl
-aT
-Hc
-ym
-ym
-ym
-ym
-dZ
-dZ
-dZ
-dZ
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+LQ
+Vs
+Ej
+RE
+AI
+Vs
+LQ
+Es
+Es
+Es
+Es
+Tn
+Tn
+Tn
+Tn
 "}
 (6,1,1) = {"
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-aT
-Hc
-Pw
-cE
-ki
-QE
-Pw
-Hc
-aT
-ym
-ym
-ym
-ym
-dZ
-dZ
-dZ
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Vs
+LQ
+nd
+lF
+JO
+ct
+nd
+LQ
+Vs
+Es
+Es
+Es
+Es
+Tn
+Tn
+Tn
 "}
 (7,1,1) = {"
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-GP
-cE
-KP
-KP
-Ei
-ef
-Ov
-KP
-KP
-QE
-GP
-ym
-ym
-ym
-ym
-dZ
-dZ
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+MC
+lF
+gP
+gP
+SP
+RE
+dW
+gP
+gP
+ct
+MC
+Es
+Es
+Es
+Es
+Tn
+Tn
 "}
 (8,1,1) = {"
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-Hc
-KP
-ki
-JY
-ki
-ki
-ki
-uS
-ki
-KP
-Hc
-ym
-ym
-ym
-ym
-dZ
-dZ
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+LQ
+gP
+JO
+jt
+JO
+JO
+JO
+Cw
+JO
+gP
+LQ
+Es
+Es
+Es
+Es
+Tn
+Tn
 "}
 (9,1,1) = {"
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-Kk
-KP
-JY
-JY
-uS
-JY
-JY
-JY
-JY
-KP
-UV
-ym
-ym
-ym
-ym
-ym
-dZ
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+fj
+gP
+jt
+jt
+Cw
+jt
+jt
+jt
+jt
+gP
+cU
+Es
+Es
+Es
+Es
+Es
+Tn
 "}
 (10,1,1) = {"
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-Hc
-KP
-ki
-SB
-ki
-JY
-ki
-SB
-ki
-KP
-Hc
-ym
-ym
-ym
-ym
-ym
-dZ
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+LQ
+gP
+JO
+fa
+JO
+jt
+JO
+fa
+JO
+gP
+LQ
+Es
+Es
+Es
+Es
+Es
+Tn
 "}
 (11,1,1) = {"
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-Ds
-Bd
-ki
-Hc
-Hc
-TP
-Hc
-Hc
-XU
-Bd
-Ds
-ym
-ym
-ym
-ym
-ym
-dZ
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+yd
+Bt
+JO
+LQ
+LQ
+pw
+LQ
+LQ
+xx
+Bt
+yd
+Es
+Es
+Es
+Es
+Es
+Tn
 "}
 (12,1,1) = {"
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-Hc
-Hc
-Hc
-Hc
-Jx
-Ny
-mc
-Hc
-Hc
-Hc
-Hc
-ym
-ym
-ym
-ym
-ym
-dZ
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+LQ
+LQ
+LQ
+LQ
+hL
+Am
+pY
+LQ
+LQ
+LQ
+LQ
+Es
+Es
+Es
+Es
+Es
+Tn
 "}
 (13,1,1) = {"
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-ef
-ki
-ef
-Lt
-Lt
-Lt
-fG
-Lt
-ef
-ki
-ef
-ym
-ym
-ym
-ym
-ym
-dZ
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+RE
+JO
+RE
+MM
+MM
+MM
+yn
+MM
+RE
+JO
+RE
+Es
+Es
+Es
+Es
+Es
+Tn
 "}
 (14,1,1) = {"
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-Hc
-Hc
-Hc
-Hc
-yo
-fG
-WZ
-Hc
-Hc
-Hc
-Hc
-ym
-ym
-ym
-ym
-ym
-ym
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+LQ
+LQ
+LQ
+LQ
+AX
+yn
+IR
+LQ
+LQ
+LQ
+LQ
+Es
+Es
+Es
+Es
+Es
+Es
 "}
 (15,1,1) = {"
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-GP
-Hc
-EJ
-Tq
-Re
-fG
-qZ
-Hc
-ug
-Hc
-GP
-ym
-ym
-ym
-ym
-ym
-ym
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+MC
+LQ
+cH
+sy
+db
+yn
+Tu
+LQ
+wj
+LQ
+MC
+Es
+Es
+Es
+Es
+Es
+Es
 "}
 (16,1,1) = {"
-dZ
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-bv
-wa
-Cg
-Cg
-Nb
-Gx
-mB
-Cg
-sA
-ym
-ym
-ym
-ym
-ym
-ym
-dZ
+Tn
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+vs
+AE
+MV
+MV
+zT
+nB
+Xa
+MV
+rf
+Es
+Es
+Es
+Es
+Es
+Es
+Tn
 "}
 (17,1,1) = {"
-dZ
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-GP
-Hc
-Hc
-Hc
-XJ
-Hc
-Hc
-Hc
-GP
-ym
-ym
-ym
-ym
-ym
-ym
-dZ
+Tn
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+MC
+LQ
+LQ
+LQ
+ej
+LQ
+LQ
+LQ
+MC
+Es
+Es
+Es
+Es
+Es
+Es
+Tn
 "}
 (18,1,1) = {"
-dZ
-dZ
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-Hc
-mZ
-xY
-LV
-xM
-ap
-Hc
-ym
-ym
-ym
-ym
-ym
-ym
-dZ
-dZ
+Tn
+Tn
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+LQ
+rs
+IU
+tI
+Sa
+aY
+LQ
+Es
+Es
+Es
+Es
+Es
+Es
+Tn
+Tn
 "}
 (19,1,1) = {"
-dZ
-dZ
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-Hc
-Hc
-pX
-iD
-EQ
-Hc
-AT
-ym
-ym
-ym
-ym
-ym
-ym
-dZ
-dZ
+Tn
+Tn
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+LQ
+LQ
+nO
+Ci
+BI
+LQ
+CJ
+Es
+Es
+Es
+Es
+Es
+Es
+Tn
+Tn
 "}
 (20,1,1) = {"
-dZ
-dZ
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-GP
-ps
-ym
-oz
-GP
-LV
-ym
-vx
-ym
-ym
-ym
-dZ
-dZ
-dZ
+Tn
+Tn
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+MC
+zX
+Es
+hG
+MC
+tI
+Es
+Jm
+Es
+Es
+Es
+Tn
+Tn
+Tn
 "}
 (21,1,1) = {"
-dZ
-dZ
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-iG
-vx
-ym
-ym
-ym
-ym
-ym
-dZ
-dZ
-dZ
-dZ
+Tn
+Tn
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+lK
+Jm
+Es
+Es
+Es
+Es
+Es
+Tn
+Tn
+Tn
+Tn
 "}
 (22,1,1) = {"
-dZ
-dZ
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-dZ
-dZ
-dZ
-dZ
-dZ
+Tn
+Tn
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Tn
+Tn
+Tn
+Tn
+Tn
 "}
 (23,1,1) = {"
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-ym
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Es
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
 "}
 (24,1,1) = {"
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-ym
-ym
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Es
+Es
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
 "}
 (25,1,1) = {"
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-ym
-ym
-ym
-ym
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Es
+Es
+Es
+Es
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
 "}
