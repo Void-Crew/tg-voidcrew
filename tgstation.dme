@@ -5394,6 +5394,7 @@
 #include "voidcrew\modules\mob\living\simple_animal\hostile\mining_mobs\ice_demon.dm"
 #include "voidcrew\modules\mob\living\simple_animal\hostile\mining_mobs\polarbear.dm"
 #include "voidcrew\modules\mob\living\simple_animal\hostile\mining_mobs\wolf.dm"
+#include "voidcrew\modules\mob\living\simple_animal\slime\slime.dm"
 #include "voidcrew\modules\nanites\code\circuits.dm"
 #include "voidcrew\modules\nanites\code\designs.dm"
 #include "voidcrew\modules\nanites\code\machines.dm"

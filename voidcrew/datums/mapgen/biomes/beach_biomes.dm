@@ -23,7 +23,7 @@
 	flora_spawn_chance = 25
 	mob_spawn_list = list(
 		/mob/living/simple_animal/butterfly/beach = 1,
-		///mob/living/simple_animal/slime/pet/beach = 1,
+		/mob/living/simple_animal/slime/pet/beach = 1,
 		///mob/living/simple_animal/chicken/rabbit/normal/beach = 1,
 		/mob/living/simple_animal/chicken/beach = 1,
 		/mob/living/simple_animal/chick/beach = 1,
