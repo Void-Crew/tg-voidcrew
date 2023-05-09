@@ -36,8 +36,7 @@
 	CHECK_TICK
 	gen_turf.AfterChange(CHANGETURF_IGNORE_AIR|CHANGETURF_RECALC_ADJACENT)
 	CHECK_TICK
-	//TODO - Remove this
-	new_turf.lighting_build_overlay()
+
 	generate_features(new_turf)
 
 	CHECK_TICK
@@ -64,8 +63,6 @@
 	//Overwrite turf areas with cave areas to combat weather
 	var/area/overmap_encounter/planetoid/cave/new_area = GLOB.areas_by_type[/area/overmap_encounter/planetoid/cave] || new
 	var/area/old_area = get_area(new_turf)
-	//TODO - Remove this
-	new_turf.lighting_build_overlay()
 	CHECK_TICK
 
 	if(!closed)

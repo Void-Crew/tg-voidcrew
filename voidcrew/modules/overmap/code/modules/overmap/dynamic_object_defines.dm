@@ -90,10 +90,6 @@
 	ambientsounds = RUINS
 	outdoors = TRUE
 
-/area/overmap_encounter/LateInitialize()
-	. = ..()
-	create_area_lighting_objects()
-
 /area/overmap_encounter/planetoid
 	name = "\improper Unknown Planetoid"
 	sound_environment = SOUND_ENVIRONMENT_MOUNTAINS
