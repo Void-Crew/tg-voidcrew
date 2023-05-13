@@ -6,7 +6,7 @@
 	/// Datum containing all of the information about this planet
 	var/datum/overmap/planet/planet
 	///The active turf reservation, if there is one
-	var/datum/space_level/space_level
+	var/datum/map_zone/mapzone
 	///The preset ruin template to load, if/when it is loaded.
 	var/datum/map_template/template
 	///Keep track of whether or not the docks have been reserved by a ship. This is required to prevent issues where two ships will attempt to dock in the same place due to unfortunate timing
@@ -27,14 +27,14 @@
   * * visiting shuttle - The docking port of the shuttle visiting the level.
   */
 /obj/structure/overmap/planet/proc/load_level(obj/docking_port/mobile/visiting_shuttle)
-	//if(mapzone)
-		//return
+	if(mapzone)
+		return
 	//if(!COOLDOWN_FINISHED(SSovermap, encounter_cooldown))
 		//return "WARNING! Stellar interference is restricting flight in this area. Interference should pass in [COOLDOWN_TIMELEFT(SSovermap, encounter_cooldown) / 10] seconds."
 	var/list/dynamic_encounter_values = SSovermap.spawn_dynamic_encounter(planet, TRUE, ruin_type = template)
-	//mapzone = dynamic_encounter_values[1]
-	reserve_dock = dynamic_encounter_values[1]
-	reserve_dock_secondary = dynamic_encounter_values[2]
+	mapzone = dynamic_encounter_values[1]
+	reserve_dock = dynamic_encounter_values[2]
+	reserve_dock_secondary = dynamic_encounter_values[3]
 
 
 
@@ -142,15 +142,15 @@
   * Unloads the reserve, deletes the linked docking port, and moves to a random location if there's no client-having, alive mobs.
   */
 /obj/structure/overmap/planet/proc/unload_level()
-	if(preserve_level || concerned) //|| !mapzone)
+	if(preserve_level || concerned || !mapzone)
 		return
 
 	if(first_dock_taken || second_dock_taken)
 		return
-	/*
+
 	if(length(mapzone.get_mind_mobs()))
 		return //Dont fuck over stranded people? tbh this shouldn't be called on this condition, instead of bandaiding it inside
-	*/
+
 	concerned = TRUE //Prevent someone to act with this while it reloads
 
 	remove_docks()
@@ -167,11 +167,10 @@
 
 
 /obj/structure/overmap/planet/proc/remove_mapzone()
-/*
 	if(mapzone)
 		mapzone.clear_reservation()
-		QDEL_NULL(mapzone)
-		*/
+		mapzone.taken = FALSE
+		mapzone = null
 
 /obj/structure/overmap/planet/proc/remove_docks()
 	if(reserve_dock)

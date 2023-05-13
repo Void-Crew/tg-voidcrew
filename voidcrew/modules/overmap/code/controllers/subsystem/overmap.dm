@@ -26,7 +26,8 @@ SUBSYSTEM_DEF(overmap)
 	var/list/events = list()
 
 	var/size = OVERMAP_SIZE
-
+	//List of all mapzones
+	var/list/map_zones = list()
 	///List of all simulated ships
 	var/list/simulated_ships = list()
 	/// Timer ID of the timer used for telling which stage of an endround "jump" the ships are in
@@ -330,30 +331,6 @@ SUBSYSTEM_DEF(overmap)
 		if (ZTRAIT_WASTELAND_RUINS)
 			return SSmapping.wasteland_ruins_templates
 
-/// Searches for a free allocation for the passed type and size, creates new physical levels if nessecary.
-/datum/controller/subsystem/overmap/proc/get_free_allocation(allocation_type, size_x, size_y, allocation_jump = DEFAULT_ALLOC_JUMP)
-	var/list/allocation_list
-	var/list/levels_to_check = z_list.Copy()
-	var/created_new_level = FALSE
-	while(TRUE)
-		for(var/datum/space_level/iterated_level as anything in levels_to_check)
-			if(iterated_level.allocation_type != allocation_type)
-				continue
-			allocation_list = find_allocation_in_level(iterated_level, size_x, size_y, allocation_jump)
-			if(allocation_list)
-				return allocation_list
-
-		if(created_new_level)
-			stack_trace("MAPPING: We have failed to find allocation after creating a new level just for it, something went terribly wrong")
-			return FALSE
-		/// None of the levels could faciliate a new allocation, make a new one
-		created_new_level = TRUE
-		levels_to_check.Cut()
-
-
-
-		levels_to_check += add_new_zlevel("Generated [allocation_name] Level", allocation_type = allocation_type)
-
 /datum/controller/subsystem/overmap/proc/spawn_dynamic_encounter(datum/overmap/planet/planet_type, ruin = TRUE, ignore_cooldown = FALSE, datum/map_template/ruin/ruin_type)
 	log_shuttle("SSOVERMAP: SPAWNING DYNAMIC ENCOUNTER STARTED")
 	var/list/ruin_list
@@ -383,8 +360,22 @@ SUBSYSTEM_DEF(overmap)
 	var/width = QUADRANT_MAP_SIZE
 
 	var/encounter_name = "Dynamic Overmap Encounter"
-	var/datum/space_level/zlevel = SSmapping.add_new_zlevel(encounter_name, list(ZTRAIT_MINING = TRUE))
-	//var/datum/map_zone/mapzone = SSmapping.create_map_zone(encounter_name)
+	var/datum/map_zone/mapzone = find_free_mapzone()
+	var/datum/space_level/zlevel
+	if(isnull(mapzone))
+		mapzone = create_map_zone(encounter_name)
+		zlevel = SSmapping.add_new_zlevel(encounter_name, list(ZTRAIT_MINING = TRUE))
+		mapzone.add_space_level(zlevel)
+	else
+		if(mapzone.z_levels[1])
+			zlevel = mapzone.z_levels[1]
+		else
+			zlevel = SSmapping.add_new_zlevel(encounter_name, list(ZTRAIT_MINING = TRUE))
+			mapzone.add_space_level(zlevel)
+
+	mapzone.taken = TRUE
+
+
 	//var/datum/virtual_level/vlevel = SSmapping.create_virtual_level(encounter_name, list(ZTRAIT_MINING = TRUE), mapzone, width, height, ALLOCATION_QUADRANT, QUADRANT_MAP_SIZE)
 
 	//vlevel.reserve_margin(QUADRANT_SIZE_BORDER)
@@ -441,41 +432,18 @@ SUBSYSTEM_DEF(overmap)
 	secondary_dock.dheight = 0
 	secondary_dock.dwidth = 0
 
-	return list(primary_dock, secondary_dock)
+	return list(mapzone, primary_dock, secondary_dock)
 
-/datum/space_level/proc/fill_in(turf/turf_type, area/area_override)
-	var/area/area_to_use = null
-	if(area_override)
-		if(ispath(area_override))
-			area_to_use = new area_override
-		else
-			area_to_use = area_override
 
-	if(area_to_use)
-		for(var/turf/iterated_turf as anything in get_block())
-			var/area/old_area = get_area(iterated_turf)
-			area_to_use.contents += iterated_turf
-			iterated_turf.change_area(old_area, area_to_use)
-			CHECK_TICK
-			if(QDELETED(src))
-				return
+/datum/controller/subsystem/overmap/proc/create_map_zone(new_name)
+	return new /datum/map_zone(new_name)
 
-	if(turf_type)
-		for(var/turf/iterated_turf as anything in get_block())
-			iterated_turf.ChangeTurf(turf_type, turf_type)
-			CHECK_TICK
-			if(QDELETED(src))
-				return
+/datum/controller/subsystem/overmap/proc/find_free_mapzone()
+	. = null
+	for(var/datum/map_zone/mapzone as anything in map_zones)
+		if(!mapzone.taken)
+			return(mapzone)
 
-/datum/space_level
-	var/low_x
-	var/low_y
-	var/high_x
-	var/high_y
 
-/datum/space_level/proc/get_block()
-	low_x = 1
-	low_y = 1
-	high_x = world.maxx
-	high_y = world.maxy
-	return block(locate(low_x,low_y,z_value), locate(high_x,high_y,z_value))
+
+
