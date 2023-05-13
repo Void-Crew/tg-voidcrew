@@ -99,12 +99,6 @@ SUBSYSTEM_DEF(mapping)
 	/// list of lazy templates that have been loaded
 	var/list/loaded_lazy_templates
 
-	/// List of all map zones
-	var/list/map_zones = list()
-	/// Translation of virtual level ID to a virtual level reference
-	var/list/virtual_z_translation = list()
-
-
 /datum/controller/subsystem/mapping/PreInit()
 	..()
 #ifdef FORCE_MAP
@@ -949,81 +943,3 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 /// Returns true if the map we're playing on is on a planet
 /datum/controller/subsystem/mapping/proc/is_planetary()
 	return config.planetary
-
-/datum/controller/subsystem/mapping/proc/create_map_zone(new_name)
-	return new /datum/map_zone(new_name)
-
-/// Allocates, creates and passes a new virtual level
-/datum/controller/subsystem/mapping/proc/create_virtual_level(new_name, list/traits, datum/map_zone/mapzone, width, height, allocation_type = ALLOCATION_FREE, allocation_jump = DEFAULT_ALLOC_JUMP)
-	/// Because we add an implicit 1 for the coordinate calcuations.
-	width--
-	height--
-	var/list/allocation_coords = SSmapping.get_free_allocation(allocation_type, width, height, allocation_jump)
-	return new /datum/virtual_level(new_name, traits, mapzone, allocation_coords[1], allocation_coords[2], allocation_coords[1] + width, allocation_coords[2] + height, allocation_coords[3])
-
-/// Searches for a free allocation for the passed type and size, creates new physical levels if nessecary.
-/datum/controller/subsystem/mapping/proc/get_free_allocation(allocation_type, size_x, size_y, allocation_jump = DEFAULT_ALLOC_JUMP)
-	var/list/allocation_list
-	var/list/levels_to_check = z_list.Copy()
-	var/created_new_level = FALSE
-	while(TRUE)
-		for(var/datum/space_level/iterated_level as anything in levels_to_check)
-			if(iterated_level.allocation_type != allocation_type)
-				continue
-			allocation_list = find_allocation_in_level(iterated_level, size_x, size_y, allocation_jump)
-			if(allocation_list)
-				return allocation_list
-
-		if(created_new_level)
-			stack_trace("MAPPING: We have failed to find allocation after creating a new level just for it, something went terribly wrong")
-			return FALSE
-		/// None of the levels could faciliate a new allocation, make a new one
-		created_new_level = TRUE
-		levels_to_check.Cut()
-
-		var/allocation_name
-		switch(allocation_type)
-			if(ALLOCATION_FREE)
-				allocation_name = "Free Allocation"
-			if(ALLOCATION_QUADRANT)
-				allocation_name = "Quadrant Allocation"
-			else
-				allocation_name = "Unaccounted Allocation"
-
-		levels_to_check += add_new_zlevel("Generated [allocation_name] Level", allocation_type = allocation_type)
-
-/// Finds a box allocation inside a Z level. Uses a methodical box boundary check method
-/datum/controller/subsystem/mapping/proc/find_allocation_in_level(datum/space_level/level, size_x, size_y, allocation_jump)
-	var/target_x = 1
-	var/target_y = 1
-
-	/// Sanity
-	if(size_x > world.maxx || size_y > world.maxy)
-		stack_trace("Tried to find virtual level allocation that cannot possibly fit in a physical level.")
-		return FALSE
-
-	/// Methodical trial and error method
-	while(TRUE)
-		var/upper_target_x = target_x+size_x
-		var/upper_target_y = target_y+size_y
-
-		var/out_of_bounds = FALSE
-		if((target_x < 1 || upper_target_x > world.maxx) || (target_y < 1 || upper_target_y > world.maxy))
-			out_of_bounds = TRUE
-
-		if(!out_of_bounds && level.is_box_free(target_x, target_y, upper_target_x, upper_target_y))
-			return list(target_x, target_y, level.z_value) //hallelujah we found the unallocated spot
-
-		if(upper_target_x > world.maxx) //If we can't increment x, then the search is over
-			break
-
-		var/increments_y = TRUE
-		if(upper_target_y > world.maxy)
-			target_y = 1
-			increments_y = FALSE
-		if(increments_y)
-			target_y += allocation_jump
-		else
-			target_x += allocation_jump
-
-

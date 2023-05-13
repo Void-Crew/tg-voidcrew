@@ -6,11 +6,6 @@ GLOBAL_LIST_EMPTY(station_turfs)
 	vis_flags = VIS_INHERIT_ID // Important for interaction with and visualization of openspace.
 	luminosity = 1
 
-	/// ID of the virtual level we're in
-	var/virtual_z = 0
-	/// Translation of the virtual z to a virtual level
-	var/static/list/virtual_z_translation
-
 	/// Turf bitflags, see code/__DEFINES/flags.dm
 	var/turf_flags = NONE
 
@@ -120,14 +115,11 @@ GLOBAL_LIST_EMPTY(station_turfs)
  * If you add something relevant here add it there too
  * [/turf/open/space/Initialize]
  */
-/turf/Initialize(mapload, inherited_virtual_z)
+/turf/Initialize(mapload)
 	SHOULD_CALL_PARENT(FALSE)
 	if(flags_1 & INITIALIZED_1)
 		stack_trace("Warning: [src]([type]) initialized multiple times!")
 	flags_1 |= INITIALIZED_1
-
-	if(inherited_virtual_z)
-		virtual_z = inherited_virtual_z
 
 	/// We do NOT use the shortcut here, because this is faster
 	if(SSmapping.max_plane_offset)
@@ -149,9 +141,6 @@ GLOBAL_LIST_EMPTY(station_turfs)
 	assemble_baseturfs()
 
 	levelupdate()
-
-	if(!virtual_z_translation)
-		virtual_z_translation = SSmapping.virtual_z_translation
 
 	SETUP_SMOOTHING()
 

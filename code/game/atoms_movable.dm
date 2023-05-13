@@ -98,7 +98,6 @@
 	/// How much we as a source block explosions by
 	/// Will not automatically apply to the turf below you, you need to apply /datum/element/block_explosives in conjunction with this
 	var/explosion_block = 0
-	var/can_be_z_moved = TRUE
 
 /mutable_appearance/emissive_blocker
 
