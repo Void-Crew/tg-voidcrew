@@ -2150,6 +2150,7 @@
 /obj/structure/closet/crate,
 /obj/item/stack/sheet/iron/fifty,
 /obj/item/stack/sheet/glass/fifty,
+/obj/item/research_notes/loot/medium,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/voidcrew/tram/cargo)
 "Za" = (
