@@ -8,4 +8,3 @@
 /obj/machinery/button/tram/connect_to_shuttle(mapload, obj/docking_port/mobile/port, obj/docking_port/stationary/dock)
 	lift_id = "[port.shuttle_id]_[lift_id]"
 	. = ..()
-
