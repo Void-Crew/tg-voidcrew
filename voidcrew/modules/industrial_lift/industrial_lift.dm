@@ -5,6 +5,3 @@
 /obj/structure/industrial_lift/afterShuttleMove(turf/oldT, list/movement_force, shuttle_dir, shuttle_preferred_direction, move_dir, rotation)
 	. = ..()
 	set_movement_registrations()
-
-
-
