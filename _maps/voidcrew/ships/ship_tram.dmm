@@ -1361,8 +1361,16 @@
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/voidcrew/tram/cargo)
 "GF" = (
-/turf/closed/wall/mineral/titanium,
-/area/shuttle/voidcrew/tram/hallway/port)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/meter,
+/obj/structure/closet/l3closet/janitor,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/reagent_containers/spray/cleaner,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
 "GO" = (
 /obj/structure/industrial_lift/tram/white,
 /obj/machinery/door/window/tram/left/directional/south{
@@ -2385,7 +2393,7 @@ oo
 oo
 oo
 oo
-GF
+zC
 yj
 lg
 Ax
@@ -2581,7 +2589,7 @@ IY
 "}
 (19,1,1) = {"
 Cb
-eP
+GF
 QX
 Cb
 Rq
