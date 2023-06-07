@@ -1,0 +1,3294 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ai" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"aA" = (
+/obj/machinery/airalarm/directional/west,
+/obj/effect/spawner/random/structure/chair_maintenance{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"aF" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/obj/structure/sign/flag/terragov/directional/north,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"aH" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"aL" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/cargo)
+"aO" = (
+/obj/structure/industrial_lift/tram/subfloor/window,
+/obj/structure/window/reinforced/tram/front{
+	icon_state = "tram_window-2"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"aQ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"bk" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/machinery/button/tram/directional/north{
+	lift_id = "tramship";
+	id = 2
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"bt" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible,
+/obj/machinery/door/airlock/hatch{
+	name = "Air Filtration"
+	},
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"bA" = (
+/obj/structure/displaycase/captain,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"bB" = (
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"bS" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/smooth_half{
+	dir = 1
+	},
+/area/shuttle/voidcrew/tram/engineering)
+"bT" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"cb" = (
+/obj/structure/table/reinforced/titaniumglass,
+/obj/item/storage/medkit/o2{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/storage/medkit/toxin{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"cj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/machinery/suit_storage_unit/engine,
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/smooth_half,
+/area/shuttle/voidcrew/tram/engineering)
+"co" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/canister/nitrogen,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"cr" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"cO" = (
+/obj/structure/industrial_lift/tram/subfloor/window,
+/obj/structure/window/reinforced/tram/front{
+	icon_state = "tram_window-1"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"dg" = (
+/obj/machinery/door/window{
+	base_state = "right";
+	dir = 4;
+	icon_state = "right";
+	layer = 3
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"di" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"dk" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"dm" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/starboard)
+"dp" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/shipping_container/nthi,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"eb" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light/directional/north,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"ej" = (
+/obj/structure/closet/secure_closet/captains,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"eq" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/suit_storage_unit/industrial/loader,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"eI" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"eP" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/meter,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"eT" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"eV" = (
+/obj/effect/turf_decal/stripes{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/iron/smooth_corner{
+	dir = 4
+	},
+/area/shuttle/voidcrew/tram/engineering)
+"fj" = (
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"fk" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/medbay)
+"fA" = (
+/obj/machinery/computer/piratepad_control,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"fK" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/structure/closet/radiation,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"fO" = (
+/obj/structure/tank_dispenser/oxygen,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/starboard)
+"fS" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Life Support"
+	},
+/obj/machinery/atmospherics/pipe/layer_manifold/supply/visible,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"fV" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/airalarm/directional/south,
+/obj/machinery/light/directional/south,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"gs" = (
+/obj/machinery/computer/helm{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"gA" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"gG" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/structure/window/reinforced/tram/right/directional/north,
+/obj/machinery/destination_sign/north{
+	pixel_y = 10
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"gX" = (
+/obj/structure/industrial_lift/tram/subfloor/window,
+/obj/structure/window/reinforced/tram/front{
+	icon_state = "tram_window-3"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"gZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"hd" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/machinery/power/energy_accumulator/tesla_coil/anchored,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/smooth_half,
+/area/shuttle/voidcrew/tram/engineering)
+"hg" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"hn" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/airlock/port)
+"hv" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"hD" = (
+/obj/structure/cable,
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"hF" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"hI" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/smooth_half,
+/area/shuttle/voidcrew/tram/engineering)
+"hL" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/machinery/power/energy_accumulator/grounding_rod/anchored,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"hZ" = (
+/obj/machinery/airalarm/directional/west,
+/obj/structure/tank_dispenser/oxygen,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/port)
+"id" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/door/airlock/engineering{
+	name = "Engineering"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/engineering)
+"ig" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"io" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/machinery/door/airlock/engineering{
+	name = "Engineering"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/engineering)
+"it" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"iD" = (
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"iK" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"iQ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"iS" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"ja" = (
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"jn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/fireaxecabinet/directional/north,
+/obj/effect/spawner/random/structure/crate,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"jq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/supermatter_crystal/shard{
+	anchored = 1
+	},
+/turf/open/floor/engine,
+/area/shuttle/voidcrew/tram/engineering)
+"jr" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/machinery/door/airlock/maintenance_hatch,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"jO" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/firealarm/directional/south,
+/obj/structure/cable,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"jX" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/bridge)
+"kg" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"ko" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/suit_storage_unit/atmos,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"kx" = (
+/obj/structure/closet/secure_closet/freezer/fridge/open,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"kz" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"kE" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"kG" = (
+/obj/structure/bed,
+/obj/item/bedsheet/random,
+/obj/machinery/airalarm/directional/west,
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"kN" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"lf" = (
+/obj/machinery/door/airlock/engineering{
+	name = "Engineering"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/smooth_half,
+/area/shuttle/voidcrew/tram/engineering)
+"lg" = (
+/obj/machinery/door/airlock/engineering{
+	name = "Engineering"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/smooth_half,
+/area/shuttle/voidcrew/tram/engineering)
+"lo" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/structure/window/reinforced/tram/mid/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"lr" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/light/directional/north,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"lD" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 8
+	},
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"lJ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"ml" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"mp" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/machinery/door/window/tram/left/directional/north{
+	pixel_x = -32;
+	pixel_y = -25;
+	associated_lift = "tramship"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"ms" = (
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"mB" = (
+/obj/machinery/suit_storage_unit/void_old/jetpack,
+/obj/machinery/light/directional/east,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"mI" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"mN" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"mS" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/light/directional/north,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"mT" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/obj/machinery/airalarm/directional/north,
+/obj/machinery/light/directional/north,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"nz" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"nL" = (
+/obj/machinery/door/airlock{
+	name = "Cabin"
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"nN" = (
+/obj/machinery/mineral/ore_redemption,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"nO" = (
+/obj/structure/window/reinforced/spawner/directional/west,
+/obj/machinery/door/window/right/directional/north{
+	dir = 4;
+	name = "Engine Access"
+	},
+/obj/structure/cable,
+/obj/machinery/power/smes{
+	input_attempt = 0
+	},
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/engineering)
+"nZ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/west,
+/obj/machinery/suit_storage_unit/standard_unit,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/starboard)
+"oh" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/suit_storage_unit/standard_unit,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/starboard)
+"ok" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/meter,
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"oo" = (
+/turf/template_noop,
+/area/template_noop)
+"op" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"os" = (
+/obj/structure/cable,
+/obj/machinery/light/directional/south,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"oE" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/structure/sign/plaques/tram{
+	pixel_y = -16
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"oP" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/machinery/door/poddoor/preopen{
+	id = "tramship_shutter"
+	},
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"oZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/apc/cell_10k,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/shuttle/voidcrew/tram/engineering)
+"pb" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"pm" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/door/firedoor/border_only,
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"py" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/o2{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"pC" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"pJ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/multilayer/connected,
+/turf/open/floor/iron/smooth_half,
+/area/shuttle/voidcrew/tram/engineering)
+"pO" = (
+/obj/effect/landmark/tram/tramstation/west{
+	specific_lift_id = "tramship";
+	name = "Exterior Loading";
+	tgui_icons = list("Exterior"="plane-arrival")
+	},
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"pU" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/structure/window/reinforced/tram/right/directional/south,
+/obj/machinery/destination_sign/south{
+	pixel_y = -11
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"pZ" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/voidcrew/tram/bridge)
+"qy" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/machinery/power/energy_accumulator/tesla_coil/anchored,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"qF" = (
+/obj/machinery/door/airlock/command{
+	name = "Bridge"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"qI" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/light/directional/north,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"qJ" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"qK" = (
+/obj/machinery/suit_storage_unit/medical,
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"qP" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/light/directional/south,
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"qQ" = (
+/obj/structure/table/reinforced/titaniumglass,
+/obj/item/storage/medkit/advanced,
+/obj/item/storage/medkit/surgery,
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"qW" = (
+/obj/structure/closet/secure_closet/freezer/meat/open,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"rf" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"rk" = (
+/obj/machinery/suit_storage_unit/standard_unit,
+/obj/machinery/light/directional/south,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/port)
+"ry" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/landmark/lift_id{
+	specific_lift_id = "tramship"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/shipping_container/nakamura,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"rD" = (
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"rN" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"rP" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"sd" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"sm" = (
+/obj/machinery/atmospherics/components/trinary/mixer/airmix/flipped{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"sG" = (
+/obj/machinery/cryopod,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"sX" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"tu" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/button/tram/directional/west{
+	lift_id = "tramship"
+	},
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"tC" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"tD" = (
+/obj/machinery/atmospherics/components/tank/air,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"tN" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/meter,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"tO" = (
+/obj/structure/bed,
+/obj/item/bedsheet/dorms,
+/obj/machinery/airalarm/directional/west,
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"tQ" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/hallway/port)
+"uw" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/item/paper{
+	default_raw_text = "THRUSTER SMES UNITS START OUT NOT CHARGING AND EMPTY."
+	},
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"uA" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"uB" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/layer1,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"uG" = (
+/obj/structure/table/reinforced/titaniumglass,
+/obj/item/storage/medkit/brute{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/storage/medkit/brute{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/storage/medkit/fire,
+/obj/item/storage/medkit/fire{
+	pixel_y = -4
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"uH" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/door/firedoor/border_only,
+/obj/structure/closet/secure_closet/quartermaster{
+	req_access = null
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"uU" = (
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"uW" = (
+/obj/machinery/computer/operating{
+	dir = 1
+	},
+/obj/structure/sign/poster/quirk/medical_slogan{
+	pixel_y = -32
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"uY" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"va" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"vn" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"vq" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"vv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/closet/radiation,
+/obj/machinery/light/directional/east,
+/turf/open/floor/iron/smooth_half{
+	dir = 1
+	},
+/area/shuttle/voidcrew/tram/engineering)
+"vx" = (
+/obj/structure/sign/collision_counter,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"vB" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"vO" = (
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"vV" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"wy" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"wJ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/layer1,
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"wN" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer/on{
+	target_temperature = 73
+	},
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"wQ" = (
+/obj/structure/cable,
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"xe" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/light/directional/north,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"xn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/random/structure/girder,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"xq" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"xr" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light/directional/north,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"xx" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/obj/structure/sign/clock/directional/north,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"xE" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/port)
+"xH" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"xT" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"xU" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/cafe)
+"xY" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"yj" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/engineering)
+"yl" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/apc/auto_name/directional/south,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"yu" = (
+/obj/machinery/suit_storage_unit/mining/eva,
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"yw" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"yx" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/port)
+"yC" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/port)
+"yG" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/machinery/door/airlock/maintenance_hatch,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"yW" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/flag/nanotrasen/directional/south,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"yZ" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"zp" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/multilayer/connected,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"zy" = (
+/obj/machinery/vending/boozeomat/all_access,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"zA" = (
+/obj/structure/table/wood,
+/obj/machinery/microwave,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"zC" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/voidcrew/tram/atmos)
+"zF" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"Ag" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/voidcrew/tram/cafe)
+"Ar" = (
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"Av" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor{
+	id = "tramship_cargo"
+	},
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/cargo)
+"Ax" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"AI" = (
+/turf/open/floor/noslip/tram_plate/energized{
+	initial_gas_mix = "TEMP=2.7"
+	},
+/area/shuttle/voidcrew/tram/loading)
+"AZ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"Bh" = (
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"Bi" = (
+/obj/effect/turf_decal/stripes{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_half{
+	dir = 1
+	},
+/area/shuttle/voidcrew/tram/engineering)
+"Bq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/light/directional/east,
+/turf/open/floor/iron/smooth_half{
+	dir = 1
+	},
+/area/shuttle/voidcrew/tram/engineering)
+"BA" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/obj/machinery/suit_storage_unit/standard_unit,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/port)
+"BH" = (
+/obj/docking_port/mobile/voidcrew/tram{
+	dir = 2
+	},
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/port)
+"BK" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/structure/window/reinforced/tram/right/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"BN" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/random/structure/tank_holder,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"Cb" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/atmos)
+"Ch" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/dorms)
+"Cq" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/shipping_container/cybersun,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"CB" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Tram Station"
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"CD" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"CN" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/starboard)
+"CU" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"Dd" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/directional/south,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Dn" = (
+/obj/structure/table/wood,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"Dt" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"Dy" = (
+/obj/effect/spawner/random/structure/crate_loot,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"DV" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/obj/machinery/suit_storage_unit/standard_unit,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/port)
+"Eh" = (
+/obj/machinery/firealarm/directional/south,
+/obj/structure/table/optable,
+/obj/item/storage/backpack/duffelbag/med/surgery,
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"Eq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/layer1,
+/obj/machinery/atmospherics/components/trinary/filter/atmos/n2{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"Er" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"EH" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"EK" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/layer1,
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth_half,
+/area/shuttle/voidcrew/tram/engineering)
+"ET" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"Fc" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"Fp" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Fv" = (
+/obj/effect/turf_decal/stripes/corner,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"FT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/emitter/welded{
+	dir = 4
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"Gf" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/piratepad,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"Gg" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/machinery/modular_computer/console/preset/engineering{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"Gm" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"GF" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/meter,
+/obj/structure/closet/l3closet/janitor,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/reagent_containers/spray/cleaner,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"GO" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/machinery/door/window/tram/left/directional/south{
+	pixel_x = -32;
+	pixel_y = -7;
+	associated_lift = "tramship"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"GY" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"HE" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/secure_closet/atmospherics{
+	req_access = list("engine_equip")
+	},
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"HI" = (
+/obj/structure/table/reinforced/titaniumglass,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"HR" = (
+/obj/effect/turf_decal/stripes{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_corner{
+	dir = 4
+	},
+/area/shuttle/voidcrew/tram/engineering)
+"HT" = (
+/obj/machinery/vending/medical,
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"Ig" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"Ii" = (
+/obj/machinery/suit_storage_unit/mining,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"IB" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"IF" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 8;
+	target_pressure = 4500
+	},
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"IY" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/machinery/door/poddoor/preopen{
+	id = "tramship_shutter"
+	},
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/dorms)
+"Je" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/reflector/box/mapping,
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"Jg" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/closet/radiation,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"Jj" = (
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"Jw" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/smooth_edge,
+/area/shuttle/voidcrew/tram/engineering)
+"JT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Ka" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"Kb" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"Kf" = (
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"Ki" = (
+/obj/structure/fans/tiny/shield{
+	name = "tram shield"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Kj" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/shipping_container/nanotrasen,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"KL" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"KO" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Lb" = (
+/obj/structure/table/reinforced/titaniumglass,
+/obj/machinery/recharger,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"Lh" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"Lm" = (
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 8;
+	target_pressure = 4500
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mapping_helpers/apc/unlocked,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"LF" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"LI" = (
+/obj/structure/industrial_lift/tram/subfloor/window,
+/obj/structure/window/reinforced/tram/front{
+	icon_state = "tram_window-3"
+	},
+/obj/machinery/computer/tram_controls/directional/west{
+	specific_lift_id = "tramship";
+	pixel_y = -16
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"LJ" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"Mf" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/layer1,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"Mi" = (
+/obj/structure/table/wood,
+/obj/item/knife,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"Mn" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/effect/landmark/tram/tramstation/central{
+	specific_lift_id = "tramship";
+	tgui_icons = list("Other Functions"="bullhorn","Medical"="plus","Salvage and Engineering"="wrench");
+	name = "Interior"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Mq" = (
+/obj/machinery/cryopod{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"Mt" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/structure/window/reinforced/tram/left/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"MF" = (
+/obj/structure/fans/tiny/shield{
+	name = "tram shield"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"MR" = (
+/obj/machinery/modular_computer/console/preset/id{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"Nk" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/flag/ssc/directional/south,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"Nn" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"Nr" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "tramship_shutter"
+	},
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/cafe)
+"NB" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/starboard)
+"NF" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/flag/terragov/directional/south,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"NX" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"Oe" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"Oo" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/starboard)
+"Or" = (
+/obj/machinery/autolathe,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"Oy" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/shuttle/voidcrew/tram/engineering)
+"OH" = (
+/obj/structure/fans/tiny/shield{
+	name = "tram shield"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/noslip/tram_plate/energized,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"OL" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"OQ" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"Pl" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"Px" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"Pz" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/airlock/starboard)
+"PM" = (
+/obj/machinery/button/door/directional/north{
+	id = "tramship_shutter";
+	name = "Window Shutters"
+	},
+/obj/machinery/light/directional/west,
+/obj/structure/table/reinforced/titaniumglass,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"PN" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Tram Station"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"PT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/secure_closet/engineering_personal,
+/obj/item/construction/rcd/loaded,
+/obj/item/construction/rtd/loaded,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/smooth_half{
+	dir = 1
+	},
+/area/shuttle/voidcrew/tram/engineering)
+"Qb" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/engine,
+/area/shuttle/voidcrew/tram/engineering)
+"Qe" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable,
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"Qg" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/directional/south,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"Qi" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"QF" = (
+/obj/structure/cable,
+/obj/machinery/power/shuttle_engine/ship/electric{
+	dir = 4
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/voidcrew/tram/engineering)
+"QP" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"QX" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/n2{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"Rf" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Supermatter Core"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"Rq" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"Rr" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/smooth_half{
+	dir = 1
+	},
+/area/shuttle/voidcrew/tram/engineering)
+"Rz" = (
+/obj/machinery/airalarm/directional/west,
+/obj/structure/table/optable,
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"RI" = (
+/obj/structure/closet/secure_closet/freezer/kitchen/mining,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"RM" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/turf/open/floor/noslip/tram_plate/energized{
+	initial_gas_mix = "TEMP=2.7"
+	},
+/area/shuttle/voidcrew/tram/loading)
+"RS" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"Sc" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/noslip/tram_plate/energized{
+	initial_gas_mix = "TEMP=2.7"
+	},
+/area/shuttle/voidcrew/tram/loading)
+"Sg" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"So" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"Sr" = (
+/obj/structure/fans/tiny/shield{
+	name = "tram shield"
+	},
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Su" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"Sy" = (
+/obj/machinery/computer/order_console/mining/golem{
+	name = "naval mining equipment vendor"
+	},
+/obj/item/mining_voucher,
+/obj/item/mining_voucher,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"SJ" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/voidcrew/tram/dorms)
+"ST" = (
+/obj/machinery/firealarm/directional/west,
+/obj/machinery/computer/cargo/express,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"SV" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"SX" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"Ts" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"TD" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+"TN" = (
+/obj/machinery/griddle,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"TP" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"TR" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/cafe)
+"TX" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Ub" = (
+/obj/machinery/button/tram/directional/south{
+	lift_id = "tramship";
+	id = 2
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Uv" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/machinery/door/poddoor/preopen{
+	id = "tramship_shutter"
+	},
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Ux" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/emitter/welded{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"UC" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"UJ" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"UL" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/effect/spawner/random/structure/crate_loot,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"US" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"UY" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "tramship_shutter"
+	},
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/medbay)
+"Vh" = (
+/obj/effect/turf_decal/stripes{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_corner,
+/area/shuttle/voidcrew/tram/engineering)
+"Vm" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/obj/machinery/suit_storage_unit/standard_unit,
+/obj/machinery/light/directional/north,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/airlock/starboard)
+"Vq" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 8
+	},
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"Vr" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/airalarm/directional/south,
+/obj/structure/cable,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"Vt" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/shuttle/voidcrew/tram/medbay)
+"Vw" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/obj/structure/cable,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Vz" = (
+/obj/machinery/button/door/directional/north{
+	id = "tramship_cargo";
+	name = "Cargo Bay Doors"
+	},
+/obj/structure/tank_dispenser/oxygen,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"VE" = (
+/obj/machinery/computer/cryopod{
+	pixel_y = -24
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"VS" = (
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"Wm" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/power/terminal,
+/turf/open/floor/iron/smooth_half,
+/area/shuttle/voidcrew/tram/engineering)
+"WM" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/port)
+"WZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"Xj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/shuttle/voidcrew/tram/engineering)
+"Xp" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/binary/pump/off{
+	dir = 4
+	},
+/obj/effect/spawner/random/structure/chair_maintenance{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"Xx" = (
+/obj/structure/industrial_lift/tram/white,
+/obj/structure/chair/office{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"XH" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/light/directional/south,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"XJ" = (
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"XM" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/dorms)
+"XR" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/random/structure/closet_maintenance,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/atmos)
+"XW" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "tramship_shutter"
+	},
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/voidcrew/tram/bridge)
+"Yq" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"Yv" = (
+/obj/structure/closet/crate,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/research_notes/loot/medium,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/cargo)
+"Za" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/dark,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Zg" = (
+/obj/structure/cable,
+/obj/machinery/door/airlock/public/glass{
+	name = "Tram Station"
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/tram)
+"Zr" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/turf/open/floor/engine/airless,
+/area/shuttle/voidcrew/tram/loading)
+"ZL" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/power/smes/engineering,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/voidcrew/tram/engineering)
+"ZV" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/light/directional/north,
+/turf/open/floor/pod/light,
+/area/shuttle/voidcrew/tram/hallway/starboard)
+"ZW" = (
+/obj/machinery/computer/communications{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/shuttle/voidcrew/tram/bridge)
+
+(1,1,1) = {"
+oo
+oo
+oo
+oo
+oo
+QF
+QF
+QF
+QF
+QF
+QF
+QF
+QF
+QF
+QF
+oo
+oo
+oo
+oo
+oo
+"}
+(2,1,1) = {"
+oo
+oo
+oo
+oo
+yj
+nO
+nO
+nO
+nO
+nO
+nO
+nO
+nO
+nO
+nO
+yj
+oo
+oo
+oo
+oo
+"}
+(3,1,1) = {"
+oo
+oo
+oo
+oo
+yj
+Vh
+Bi
+Bi
+Bi
+Bi
+Bi
+HR
+Bi
+Bi
+eV
+yj
+oo
+oo
+oo
+oo
+"}
+(4,1,1) = {"
+oo
+oo
+oo
+oo
+yj
+hI
+wN
+WZ
+iQ
+lJ
+uw
+lJ
+lJ
+di
+cj
+yj
+oo
+oo
+oo
+oo
+"}
+(5,1,1) = {"
+oo
+oo
+oo
+oo
+yj
+Wm
+ZL
+mI
+iQ
+lJ
+FT
+uA
+Gg
+Xj
+Xj
+yj
+oo
+oo
+oo
+oo
+"}
+(6,1,1) = {"
+oo
+oo
+oo
+oo
+yj
+Wm
+ZL
+mI
+iQ
+IF
+Je
+uA
+Rf
+Qb
+jq
+yj
+oo
+oo
+oo
+oo
+"}
+(7,1,1) = {"
+oo
+oo
+oo
+oo
+yj
+pJ
+wN
+lJ
+lJ
+co
+Ux
+uA
+hL
+Oy
+Oy
+yj
+oo
+oo
+oo
+oo
+"}
+(8,1,1) = {"
+oo
+oo
+oo
+oo
+yj
+EK
+Mf
+wJ
+Eq
+uB
+uB
+uB
+zp
+qy
+hd
+yj
+oo
+oo
+oo
+oo
+"}
+(9,1,1) = {"
+oo
+oo
+oo
+oo
+yj
+oZ
+PT
+bS
+vv
+Rr
+Rr
+Bq
+Rr
+Rr
+Jw
+yj
+oo
+oo
+oo
+oo
+"}
+(10,1,1) = {"
+oo
+oo
+oo
+zC
+yj
+lg
+Ax
+io
+Ax
+Ax
+Ax
+Ax
+id
+Ax
+lf
+yj
+SJ
+oo
+oo
+oo
+"}
+(11,1,1) = {"
+zC
+Cb
+Cb
+Cb
+Jg
+Ka
+Ax
+Vw
+aH
+eI
+Fp
+gZ
+OL
+Ax
+UC
+fK
+Ch
+Ch
+Ch
+SJ
+"}
+(12,1,1) = {"
+oP
+tD
+yw
+Cb
+Rq
+bB
+Ax
+wy
+JT
+TX
+KO
+nz
+GY
+Ax
+UC
+Nn
+iS
+nL
+kG
+IY
+"}
+(13,1,1) = {"
+Cb
+tD
+tN
+fS
+CU
+os
+Ax
+wy
+aO
+LI
+gX
+cO
+Ub
+Ax
+UC
+va
+US
+Ch
+Ch
+Ch
+"}
+(14,1,1) = {"
+oP
+tD
+kz
+Cb
+Rq
+bB
+Ax
+wy
+gG
+oE
+Xx
+pU
+GY
+Ax
+xe
+Nn
+iS
+nL
+kG
+IY
+"}
+(15,1,1) = {"
+Cb
+xn
+Lm
+Cb
+Oe
+wQ
+Ax
+xr
+mp
+xq
+xq
+GO
+XH
+Ax
+xH
+bT
+uY
+Ch
+Ch
+Ch
+"}
+(16,1,1) = {"
+oP
+XR
+Qg
+Cb
+Rq
+hg
+Ax
+wy
+Mt
+lo
+lo
+BK
+yl
+Ax
+Pl
+eT
+kE
+nL
+kG
+IY
+"}
+(17,1,1) = {"
+Cb
+eP
+ok
+bt
+Rq
+bB
+CB
+wy
+rf
+ry
+xq
+Kj
+pC
+CB
+Sg
+Nn
+jO
+Ch
+Ch
+Ch
+"}
+(18,1,1) = {"
+oP
+sm
+py
+Cb
+Rq
+bB
+kg
+wy
+rf
+xq
+Mn
+rf
+pC
+kg
+Sg
+Nn
+kE
+nL
+tO
+IY
+"}
+(19,1,1) = {"
+Cb
+GF
+QX
+Cb
+Rq
+xT
+PN
+wy
+rf
+xq
+xq
+rf
+pC
+Zg
+vB
+OQ
+Vr
+Ch
+Ch
+Ch
+"}
+(20,1,1) = {"
+oP
+Xp
+Nk
+Cb
+Rq
+sX
+Ax
+xx
+rf
+dp
+xq
+Cq
+pC
+vx
+vB
+Qi
+iS
+nL
+kG
+IY
+"}
+(21,1,1) = {"
+Cb
+ml
+yW
+Cb
+Rq
+os
+Ax
+aF
+rf
+xq
+xq
+rf
+NF
+Ax
+vB
+Nn
+sd
+Ch
+Ch
+Ch
+"}
+(22,1,1) = {"
+oP
+BN
+fV
+Cb
+Rq
+bB
+Ax
+mT
+rf
+oE
+xq
+rf
+Dd
+Ax
+vB
+Nn
+iS
+nL
+kG
+IY
+"}
+(23,1,1) = {"
+Cb
+jn
+ok
+Cb
+Rq
+bB
+Ax
+bk
+rf
+xq
+xq
+rf
+Za
+Ax
+mS
+Nn
+VE
+Ch
+Ch
+Ch
+"}
+(24,1,1) = {"
+Cb
+ko
+rN
+Cb
+Rq
+bB
+Ax
+IB
+gA
+EH
+EH
+gA
+XJ
+Ax
+vB
+va
+CD
+Su
+sG
+Ch
+"}
+(25,1,1) = {"
+Cb
+HE
+rN
+yG
+kN
+pb
+jr
+IB
+gA
+EH
+EH
+gA
+XJ
+Ax
+vB
+bT
+XM
+NX
+Mq
+Ch
+"}
+(26,1,1) = {"
+Cb
+Cb
+Cb
+Cb
+Rq
+os
+Ax
+IB
+gA
+EH
+EH
+gA
+XJ
+Ax
+vB
+SV
+Pz
+Pz
+Pz
+Pz
+"}
+(27,1,1) = {"
+hn
+hZ
+DV
+hn
+lr
+bB
+Ax
+IB
+gA
+EH
+EH
+gA
+XJ
+Ax
+vB
+Px
+Pz
+oh
+nZ
+Pz
+"}
+(28,1,1) = {"
+BH
+xE
+yx
+yC
+Ka
+bB
+Ax
+IB
+gA
+EH
+EH
+gA
+XJ
+Ax
+vB
+vB
+CN
+Oo
+dm
+NB
+"}
+(29,1,1) = {"
+hn
+BA
+rk
+hn
+xY
+VS
+Ax
+IB
+gA
+EH
+EH
+gA
+XJ
+Ax
+Sg
+ja
+Pz
+Vm
+fO
+Pz
+"}
+(30,1,1) = {"
+hn
+hn
+hn
+hn
+xY
+VS
+Ax
+IB
+gA
+EH
+EH
+gA
+XJ
+Ax
+Sg
+ja
+Pz
+Pz
+Pz
+Pz
+"}
+(31,1,1) = {"
+aL
+ST
+aA
+uH
+xY
+VS
+Ax
+IB
+gA
+EH
+EH
+gA
+XJ
+Ax
+Sg
+ja
+KL
+iD
+Rz
+fk
+"}
+(32,1,1) = {"
+aL
+Gf
+Bh
+pm
+xY
+VS
+Uv
+IB
+gA
+EH
+EH
+gA
+XJ
+Uv
+Sg
+ja
+KL
+rD
+uW
+fk
+"}
+(33,1,1) = {"
+aL
+fA
+fj
+UL
+xY
+VS
+Uv
+IB
+gA
+EH
+EH
+gA
+XJ
+Uv
+Sg
+ET
+Vt
+iD
+Eh
+fk
+"}
+(34,1,1) = {"
+aL
+nN
+Fv
+eq
+xY
+VS
+Uv
+IB
+gA
+EH
+EH
+gA
+XJ
+Uv
+Sg
+ja
+cr
+qJ
+HT
+fk
+"}
+(35,1,1) = {"
+Av
+Yv
+Gm
+xY
+xY
+Sy
+Ax
+IB
+gA
+EH
+EH
+gA
+XJ
+Ax
+ZV
+Sg
+ja
+KL
+qK
+UY
+"}
+(36,1,1) = {"
+Av
+fj
+Gm
+xY
+VS
+tQ
+Ax
+Ki
+OH
+MF
+MF
+OH
+Sr
+Ax
+UJ
+Sg
+ja
+KL
+qQ
+UY
+"}
+(37,1,1) = {"
+Av
+Dy
+Gm
+xY
+yZ
+tQ
+tu
+Zr
+AI
+uU
+uU
+AI
+hD
+Qe
+UJ
+Sg
+ja
+KL
+uG
+UY
+"}
+(38,1,1) = {"
+Av
+Dy
+Gm
+xY
+VS
+tQ
+TP
+Zr
+AI
+uU
+uU
+AI
+uU
+Kb
+UJ
+Sg
+iK
+AZ
+cb
+UY
+"}
+(39,1,1) = {"
+aL
+Vz
+SX
+xY
+VS
+tQ
+TP
+Zr
+AI
+uU
+uU
+AI
+uU
+Kb
+UJ
+Sg
+ja
+KL
+vq
+fk
+"}
+(40,1,1) = {"
+aL
+yu
+Gm
+xY
+WM
+tQ
+TP
+Zr
+AI
+uU
+uU
+AI
+uU
+Kb
+UJ
+Sg
+vO
+Lh
+hF
+fk
+"}
+(41,1,1) = {"
+aL
+Ii
+Gm
+xY
+Fc
+tQ
+TP
+Zr
+AI
+uU
+uU
+AI
+uU
+Kb
+UJ
+Sg
+mN
+KL
+iD
+fk
+"}
+(42,1,1) = {"
+aL
+mB
+Gm
+xY
+Or
+tQ
+TP
+Zr
+AI
+uU
+uU
+AI
+uU
+Kb
+UJ
+RS
+Ts
+QP
+LF
+fk
+"}
+(43,1,1) = {"
+jX
+jX
+jX
+qF
+XW
+jX
+vn
+Zr
+AI
+uU
+pO
+AI
+uU
+qP
+xU
+dk
+vV
+vV
+ig
+xU
+"}
+(44,1,1) = {"
+jX
+PM
+Ar
+hv
+bA
+jX
+TP
+Zr
+AI
+uU
+uU
+AI
+uU
+Kb
+xU
+qI
+ms
+Dn
+TN
+Nr
+"}
+(45,1,1) = {"
+XW
+Lb
+op
+hv
+Kf
+jX
+TP
+Zr
+AI
+uU
+uU
+AI
+uU
+Kb
+xU
+rP
+Ig
+Mi
+Er
+Nr
+"}
+(46,1,1) = {"
+XW
+HI
+Kf
+aQ
+So
+jX
+TP
+Zr
+AI
+uU
+uU
+AI
+uU
+Kb
+xU
+TR
+ms
+zA
+dg
+Nr
+"}
+(47,1,1) = {"
+XW
+Kf
+TD
+Dt
+ai
+jX
+TP
+Zr
+AI
+uU
+uU
+AI
+uU
+Kb
+xU
+eb
+zF
+it
+Jj
+Nr
+"}
+(48,1,1) = {"
+XW
+MR
+gs
+ZW
+ej
+jX
+TP
+Zr
+AI
+uU
+uU
+AI
+uU
+Kb
+xU
+zy
+RI
+qW
+kx
+Nr
+"}
+(49,1,1) = {"
+pZ
+XW
+XW
+XW
+XW
+jX
+tC
+Zr
+RM
+Zr
+Zr
+RM
+Zr
+LJ
+xU
+Nr
+Nr
+Nr
+Nr
+Ag
+"}
+(50,1,1) = {"
+oo
+oo
+oo
+oo
+oo
+oo
+lD
+Yq
+Sc
+Yq
+Yq
+Sc
+Yq
+Vq
+oo
+oo
+oo
+oo
+oo
+oo
+"}
