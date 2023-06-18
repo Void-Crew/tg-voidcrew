@@ -45,8 +45,7 @@
 		data["jobs"] += list(list(
 			name = ship_jobs.title,
 			slots = linked_port.current_ship.job_slots[ship_jobs],
-			ref = REF(ship_jobs),
-			max = linked_port.current_ship.source_template.job_slots[ship_jobs] * 2,
+			ref = REF(ship_jobs)
 		))
 
 	return data
