@@ -252,3 +252,10 @@
 		"surgery_ext_dissection",
 	)
 
+/datum/techweb_node/genetics/New()
+	. = ..()
+	design_ids += list(
+		"clonepod",
+		"clonecontrol"
+	)
+
