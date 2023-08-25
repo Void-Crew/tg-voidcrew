@@ -21,3 +21,6 @@
 #define ZTRAIT_REEBE_RUINS "Reebe Ruins"
 
 #define QUADRANT_MAP_SIZE 127
+
+#define QUADRANT_SIZE_BORDER 3
+#define TRANSIT_SIZE_BORDER 3
