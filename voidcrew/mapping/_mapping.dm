@@ -46,13 +46,14 @@
 		return
 
 	for(var/datum/map_template/shuttle/voidcrew/shuttles as anything in subtypesof(/datum/map_template/shuttle/voidcrew))
-		ship_purchase_list["[initial(shuttles.name)] ([initial(shuttles.faction_prefix)] [initial(shuttles.part_cost)] part\s)"] = shuttles
+		if(initial(shuttles.enabled))
+			ship_purchase_list["[initial(shuttles.name)] ([initial(shuttles.faction_prefix)] [initial(shuttles.part_cost)] part\s)"] = shuttles
 
-		switch(initial(shuttles.faction_prefix))
-			if(NANOTRASEN_SHIP)
-				nt_ship_list[initial(shuttles.name)] = shuttles
-			if(SYNDICATE_SHIP)
-				syn_ship_list[initial(shuttles.name)] = shuttles
+			switch(initial(shuttles.faction_prefix))
+				if(NANOTRASEN_SHIP)
+					nt_ship_list[initial(shuttles.name)] = shuttles
+				if(SYNDICATE_SHIP)
+					syn_ship_list[initial(shuttles.name)] = shuttles
 
 /datum/controller/subsystem/mapping/get_station_center()
 	return SSovermap.overmap_centre || locate(OVERMAP_LEFT_SIDE_COORD, OVERMAP_NORTH_SIDE_COORD, OVERMAP_Z_LEVEL)
