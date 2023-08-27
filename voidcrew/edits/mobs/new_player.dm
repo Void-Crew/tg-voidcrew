@@ -24,6 +24,9 @@
 		return
 
 	if(selected_ship == "Purchase")
+		if (!GLOB.ship_buying)
+			alert(src, "Buying ships is disabled!")
+			return select_ship()
 		var/datum/map_template/shuttle/voidcrew/template = SSmapping.ship_purchase_list[tgui_input_list(src, "Please select ship to purchase!", "Welcome, [used_name].", SSmapping.ship_purchase_list)]
 		if(!template)
 			return select_ship()
