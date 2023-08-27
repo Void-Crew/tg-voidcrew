@@ -270,6 +270,9 @@
 	crewmate.mind.wipe_memory() //clears ALL memories, but currently all they have is their old bank account.
 	crewmate.mind.assigned_role.paycheck_department = ship_team.name
 
+	if(!isnull(source_template.antag_datum))
+		crewmate.mind.add_antag_datum(source_template.antag_datum)
+
 	//Adds a faction hud to a newplayer documentation in _HELPERS/game.dm
 //	add_faction_hud(FACTION_HUD_GENERAL, faction_prefix, crewmate)
 

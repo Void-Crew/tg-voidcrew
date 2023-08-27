@@ -5258,6 +5258,7 @@
 #include "voidcrew\_DEFINES\shuttles.dm"
 #include "voidcrew\_DEFINES\sound.dm"
 #include "voidcrew\_DEFINES\subsystems.dm"
+#include "voidcrew\_globalvars\configuration.dm"
 #include "voidcrew\_HELPERS\data_huds.dm"
 #include "voidcrew\_HELPERS\ships.dm"
 #include "voidcrew\_HELPERS\virtual_z_level.dm"
