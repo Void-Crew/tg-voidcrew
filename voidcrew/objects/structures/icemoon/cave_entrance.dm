@@ -1,12 +1,12 @@
 /obj/structure/spawner/ice_moon/demonic_portal/blobspore
 	mob_types = list(/mob/living/simple_animal/hostile/blob/blobspore/wasteland)
 	spawn_time = 300
-	faction = list("wasteland")
+	faction = list(FACTION_WASTELAND)
 
 /obj/structure/spawner/ice_moon/demonic_portal/hivebot
 	mob_types = list(/mob/living/simple_animal/hostile/hivebot/rapid/wasteland)
 	spawn_time = 300
-	faction = list("wasteland")
+	faction = list(FACTION_WASTELAND)
 
 /**
  * Drops loot from the portal. Uses variable difficulty based on drops- more valulable rewards will also add additional enemies to the attack wave.
@@ -34,7 +34,7 @@
 			if(prob(35))
 				new /mob/living/simple_animal/hostile/retaliate/clown/clownhulk/chlown(loc)
 			if(prob(25))
-				//new /mob/living/simple_animal/hostile/retaliate/clown/mutant/blob(loc)//oh god oh fuck
+				new /mob/living/simple_animal/hostile/retaliate/clown/mutant(loc)//oh god oh fuck
 			if(prob(25))
 				new /obj/item/veilrender/honkrender/honkhulkrender(loc)
 			else
@@ -372,8 +372,8 @@
 			new /obj/effect/gibspawner/human(loc)
 			new /obj/effect/gibspawner/human(loc)
 			new /mob/living/simple_animal/hostile/megafauna/blood_drunk_miner/doom(loc)
-			if(prob(50))
-				//new /obj/item/gem/bloodstone(loc)
+//			if(prob(50))
+//				new /obj/item/gem/bloodstone(loc)
 			if(prob(25))
 				new /obj/item/seeds/tomato/blood(loc)
 			new /turf/open/misc/asteroid/basalt(loc)

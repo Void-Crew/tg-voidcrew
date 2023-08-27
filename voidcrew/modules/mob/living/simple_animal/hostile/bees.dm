@@ -1,2 +1,2 @@
-/mob/living/simple_animal/hostile/poison/bees/toxin/beach
-	faction = list("beach")
+/mob/living/simple_animal/hostile/bee/toxin/beach
+	faction = list(FACTION_BEACH)
