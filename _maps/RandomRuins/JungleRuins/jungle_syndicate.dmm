@@ -1,0 +1,293 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"b" = (
+/obj/structure/sign/poster/contraband/free_key,
+/turf/closed/wall,
+/area/ruin)
+"c" = (
+/obj/effect/decal/cleanable/cobweb,
+/obj/structure/cable,
+/obj/machinery/power/rtg/advanced,
+/turf/open/floor/plating,
+/area/ruin)
+"e" = (
+/obj/structure/safe/floor,
+/obj/item/paper{
+	default_raw_text = "Evacuate the guardpost, taking everything with you and if possible burning it down with the plasma sheets stocked for the generator, then make a run for the nearest ship, allied or hostile. If it's hostile, kill."
+	},
+/turf/open/floor/plating,
+/area/ruin)
+"g" = (
+/obj/structure/punji_sticks,
+/obj/structure/flora/grass/jungle,
+/obj/effect/decal/cleanable/blood/gibs/down,
+/turf/open/misc/grass/jungle,
+/area/template_noop)
+"i" = (
+/obj/structure/table,
+/obj/item/food/rationpack,
+/obj/item/food/rationpack,
+/obj/item/food/rationpack,
+/obj/item/food/rationpack,
+/obj/item/food/rationpack,
+/obj/item/food/rationpack,
+/obj/item/reagent_containers/cup/glass/waterbottle/large,
+/obj/item/reagent_containers/cup/glass/waterbottle/large,
+/obj/item/reagent_containers/cup/glass/waterbottle/large,
+/turf/open/floor/plating,
+/area/ruin)
+"j" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/syndicate,
+/obj/item/stack/sheet/mineral/plasma,
+/obj/item/gun/ballistic/automatic/pistol,
+/turf/open/floor/plating,
+/area/ruin)
+"l" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin)
+"n" = (
+/turf/open/misc/grass/jungle,
+/area/template_noop)
+"o" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/ruin)
+"p" = (
+/mob/living/basic/syndicate/ranged/infiltrator,
+/turf/open/floor/plating,
+/area/ruin)
+"q" = (
+/mob/living/basic/syndicate/ranged/shotgun,
+/turf/open/floor/plating,
+/area/ruin)
+"r" = (
+/obj/structure/table,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/turf/open/floor/plating,
+/area/ruin)
+"t" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/porta_turret/syndicate/pod,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin)
+"w" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating,
+/area/ruin)
+"x" = (
+/obj/structure/table,
+/obj/item/grenade/smokebomb,
+/obj/item/grenade/smokebomb,
+/obj/item/grenade/smokebomb,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/paper{
+	default_raw_text = "The safe in the floor of the outpost contains instructions for if the local Syndicate headquarters is compromised."
+	},
+/turf/open/floor/plating,
+/area/ruin)
+"y" = (
+/obj/structure/sign/poster/contraband/revolver,
+/turf/closed/wall/rust,
+/area/ruin)
+"A" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/paperwork/ancient,
+/obj/item/paper{
+	default_raw_text = "You have been assigned as the exterior guards for the Syndicate's operational headquarters in this sector. Your outpost is intended to deter explorers from venturing deeper into the jungle. The base is 24km north of your current position. Good luck, and death to Nanotrasen."
+	},
+/obj/structure/filingcabinet,
+/turf/open/floor/plating,
+/area/ruin)
+"C" = (
+/obj/structure/table,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/mask/gas/syndicate,
+/turf/open/floor/plating,
+/area/ruin)
+"E" = (
+/obj/structure/punji_sticks,
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/turf/open/misc/grass/jungle,
+/area/template_noop)
+"F" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/ruin)
+"G" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/effect/mapping_helpers/apc/syndicate_access,
+/obj/effect/mapping_helpers/apc/cell_10k,
+/obj/effect/mapping_helpers/apc/full_charge,
+/turf/open/floor/plating,
+/area/ruin)
+"H" = (
+/obj/structure/punji_sticks,
+/turf/open/misc/grass/jungle,
+/area/template_noop)
+"I" = (
+/turf/closed/wall/rust,
+/area/ruin)
+"J" = (
+/obj/structure/punji_sticks,
+/obj/effect/decal/remains/human,
+/turf/open/misc/grass/jungle,
+/area/template_noop)
+"K" = (
+/obj/structure/chair/plastic,
+/turf/open/floor/plating,
+/area/ruin)
+"M" = (
+/obj/structure/sign/poster/contraband/syndicate_recruitment,
+/turf/closed/wall/rust,
+/area/ruin)
+"N" = (
+/obj/structure/punji_sticks,
+/obj/effect/decal/cleanable/blood/gibs/up,
+/turf/open/misc/grass/jungle,
+/area/template_noop)
+"R" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating,
+/area/ruin)
+"S" = (
+/obj/machinery/power/port_gen/pacman/pre_loaded,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin)
+"T" = (
+/obj/structure/punji_sticks,
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/turf/open/misc/grass/jungle,
+/area/template_noop)
+"U" = (
+/obj/machinery/door/airlock/hatch,
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/ruin)
+"V" = (
+/turf/open/floor/plating,
+/area/ruin)
+"W" = (
+/obj/structure/flora/tree/jungle,
+/turf/open/misc/grass/jungle,
+/area/template_noop)
+"X" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin)
+"Y" = (
+/turf/closed/wall,
+/area/ruin)
+
+(1,1,1) = {"
+a
+a
+J
+g
+H
+J
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+I
+I
+t
+w
+Y
+Y
+a
+a
+"}
+(3,1,1) = {"
+a
+I
+c
+X
+F
+i
+M
+Y
+a
+"}
+(4,1,1) = {"
+W
+Y
+j
+l
+V
+p
+C
+o
+T
+"}
+(5,1,1) = {"
+n
+U
+X
+l
+l
+F
+K
+R
+J
+"}
+(6,1,1) = {"
+n
+Y
+G
+q
+l
+S
+A
+w
+a
+"}
+(7,1,1) = {"
+a
+b
+x
+r
+l
+e
+y
+I
+a
+"}
+(8,1,1) = {"
+a
+Y
+w
+o
+t
+Y
+I
+a
+a
+"}
+(9,1,1) = {"
+a
+a
+N
+E
+J
+a
+a
+a
+a
+"}
