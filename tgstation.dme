@@ -5502,6 +5502,7 @@
 #include "voidcrew\objects\structures\radioactive.dm"
 #include "voidcrew\objects\structures\spawner.dm"
 #include "voidcrew\objects\structures\icemoon\cave_entrance.dm"
+#include "voidcrew\objects\structures\lavaland\necropolis_tendril.dm"
 #include "voidcrew\turfs\closed\minerals.dm"
 #include "voidcrew\turfs\open\lava.dm"
 #include "voidcrew\turfs\open\planet.dm"
