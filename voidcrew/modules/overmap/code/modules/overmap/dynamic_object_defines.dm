@@ -27,6 +27,7 @@
 
 /obj/structure/overmap/planet/Initialize(mapload)
 	. = ..()
+	SSovermap.dynamic_objects += src
 	if(planet)
 		var/datum/overmap/planet/planet_info = new planet
 		name = planet_info.name
@@ -35,31 +36,44 @@
 		color = planet_info.color
 		qdel(planet_info)
 
+/obj/structure/overmap/planet/Destroy()
+	. = ..()
+	SSovermap.dynamic_objects -= src
+
 /obj/structure/overmap/planet/lava
+	name = "strange lava planet"
 	planet = /datum/overmap/planet/lava
 
 /obj/structure/overmap/planet/ice
+	name = "strange ice planet"
 	planet = /datum/overmap/planet/ice
 
 /obj/structure/overmap/planet/beach
+	name = "strange beach planet"
 	planet = /datum/overmap/planet/beach
 
 /obj/structure/overmap/planet/jungle
+	name = "strange jungle planet"
 	planet = /datum/overmap/planet/jungle
 
 /obj/structure/overmap/planet/reebe
+	name = "???"
 	planet = /datum/overmap/planet/reebe
 
 /obj/structure/overmap/planet/asteroid
+	name = "large asteroid"
 	planet = /datum/overmap/planet/asteroid
 
 /obj/structure/overmap/planet/energy_signal
+	name = "weak energy signal"
 	planet = /datum/overmap/planet/space
 
 /obj/structure/overmap/planet/wasteland
+	name = "strange apocalyptic planet"
 	planet = /datum/overmap/planet/wasteland
 
 /obj/structure/overmap/planet/empty
+	name = "Empty Space"
 	planet = /datum/overmap/planet/empty
 
 /obj/structure/overmap/planet/empty/unload_level()

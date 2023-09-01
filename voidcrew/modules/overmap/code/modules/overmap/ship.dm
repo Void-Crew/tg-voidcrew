@@ -62,6 +62,10 @@
 	var/list/manifest = list()
 	///Assoc list of remaining open job slots (job = remaining slots)
 	var/list/job_slots
+	/// All helms connected to this ship
+	var/list/obj/machinery/computer/helm/helms = list()
+	/// Is helm access for this ship locked
+	var/helm_locked = FALSE
 
 	/**
 	 * Movement stuff

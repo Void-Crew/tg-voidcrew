@@ -141,15 +141,15 @@
 /**
   * Unloads the reserve, deletes the linked docking port, and moves to a random location if there's no client-having, alive mobs.
   */
-/obj/structure/overmap/planet/proc/unload_level()
-	if(preserve_level || concerned || !mapzone)
-		return
+/obj/structure/overmap/planet/proc/unload_level(force)
+	if((preserve_level || concerned || !mapzone) && !force)
+		return FALSE
 
-	if(first_dock_taken || second_dock_taken)
-		return
+	if((first_dock_taken || second_dock_taken) && !force)
+		return FALSE
 
-	if(length(mapzone.get_mind_mobs()))
-		return //Dont fuck over stranded people? tbh this shouldn't be called on this condition, instead of bandaiding it inside
+	if(length(mapzone.get_mind_mobs()) && !force)
+		return FALSE //Dont fuck over stranded people? tbh this shouldn't be called on this condition, instead of bandaiding it inside
 
 	concerned = TRUE //Prevent someone to act with this while it reloads
 
@@ -164,6 +164,7 @@
 */
 	forceMove(SSovermap.get_unused_overmap_square())
 	concerned = FALSE //Now it can be raided again
+	return TRUE
 
 
 /obj/structure/overmap/planet/proc/remove_mapzone()
