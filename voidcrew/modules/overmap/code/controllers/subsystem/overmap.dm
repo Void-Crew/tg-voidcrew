@@ -24,6 +24,8 @@ SUBSYSTEM_DEF(overmap)
 	var/list/turf/radius_tiles = list()
 	/// List of all events
 	var/list/events = list()
+	/// List of all dynamic overmap objects
+	var/list/dynamic_objects = list()
 
 	var/size = OVERMAP_SIZE
 
@@ -235,6 +237,7 @@ SUBSYSTEM_DEF(overmap)
 		planet_to_spawn.color = planet_info.color
 		qdel(planet_info)
 
+/datum/controller/subsystem/overmap/proc/spawn_planet()
 // TODO - MULTI-Z VLEVELS
 /datum/controller/subsystem/overmap/proc/calculate_turf_above(turf/T)
 	return

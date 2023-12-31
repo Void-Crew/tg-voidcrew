@@ -49,6 +49,9 @@
 	current_ship.update_screen()
 
 	if(!ui)
+		if(current_ship.helm_locked && !check_rights(R_ADMIN, FALSE))
+			say("ACCESS DENIED: The helm console has been disabled by your system administrator.")
+			return FALSE
 		current_ship.cam_screen.display_to(user)
 		user.client.register_map_obj(current_ship.cam_screen)
 		user.client.register_map_obj(current_ship.cam_background)
@@ -199,6 +202,7 @@
 	if(!istype(port))
 		return
 	current_ship = port.current_ship
+	current_ship.helms |= src
 
 /**
  * This proc manually rechecks that the helm computer is connected to a proper ship
@@ -215,6 +219,7 @@
 		stack_trace("Failed to connect a helm to its ship, this is almost certainly a bug!")
 
 	current_ship = port?.current_ship
+	current_ship.helms |= src
 	return !!current_ship
 
 /**
@@ -224,6 +229,7 @@
 	var/obj/docking_port/mobile/voidcrew/port = SSshuttle.get_containing_shuttle(src)
 	if(port?.current_ship)
 		current_ship = port.current_ship
+		current_ship.helms |= src
 	return TRUE
 
 /obj/machinery/computer/helm/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
