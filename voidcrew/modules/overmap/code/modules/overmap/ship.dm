@@ -270,6 +270,24 @@
 	crewmate.mind.wipe_memory() //clears ALL memories, but currently all they have is their old bank account.
 	crewmate.mind.assigned_role.paycheck_department = ship_team.name
 
+	var/list/slots = list (
+		"backpack" = ITEM_SLOT_BACKPACK,
+		"left pocket" = ITEM_SLOT_LPOCKET,
+		"right pocket" = ITEM_SLOT_RPOCKET
+	)
+
+	if(source_template.faction_prefix == NANOTRASEN_SHIP)
+		var/obj/item/gun_voucher/nt_voucher = new
+		crewmate.equip_in_one_of_slots(nt_voucher, slots)
+
+	if(source_template.faction_prefix == SYNDICATE_SHIP)
+		if(crewmate.mind.assigned_role.officer)
+			var/captain_access = SSid_access.get_region_access_list(list(REGION_ALL_STATION) + ACCESS_SYNDICATE_LEADER)
+			card.add_access(captain_access, mode = FORCE_ADD_ALL)
+		card.add_access(list(ACCESS_SYNDICATE), mode = FORCE_ADD_ALL)
+		var/obj/item/gun_voucher/syndicate/syn_voucher = new
+		crewmate.equip_in_one_of_slots(syn_voucher, slots)
+
 	if(!isnull(source_template.antag_datum))
 		crewmate.mind.add_antag_datum(source_template.antag_datum)
 
