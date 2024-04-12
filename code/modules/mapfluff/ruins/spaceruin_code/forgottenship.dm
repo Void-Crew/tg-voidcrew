@@ -194,6 +194,13 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 /obj/machinery/computer/terminal/forgottenship
 	tguitheme = "syndicate"
 
+/obj/machinery/computer/terminal/forgottenship/ntsalvage
+	tguitheme = "nanotrasen"
+	name = "shuttle console"
+	icon_screen = "shuttle"
+	upperinfo = "Nanotrasen Salvage Vessel Flight Controls"
+	content = list ("<center><b>Nanotrasen Salvage Cutter</b></center><BR>Vessel controls locked. Please input security passkey to unlock.")
+
 /obj/machinery/computer/terminal/forgottenship/helm
 	name = "helms computer"
 	desc = "The flight console of the SYN-C Starfury."
@@ -209,3 +216,11 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 	icon_screen = "commsyndie"
 	icon_keyboard = "syndie_key"
 	content = list("<B>Broadcaster Status:</B> ERROR! Unable to continue.")
+
+/obj/machinery.computer/terminal/forgottenship/dronefighter
+	name = "drone fighter control terminal"
+	desc = "A seemingly-simple terminal capable of controlling several wings of drone fighters with the aid of advanced artificial intelligence systems."
+	upperinfo = "SYN-C Starfury Drone Fighter Controls"
+	icon_screen = "commsyndie"
+	icon_keyboard = "syndie_key"
+	content = list("SyndOS 3.11<BR><BR>Cybersun Internal UEFI (c) 2521 - Internal Use Only<BR>CPU: Functional<BR>RAM: Functional<BR>GPU: Functional<BR>Initialising Drone Control...<BR>Warning: Initialisation time exceeding 50 processor cycles. Report to nearest technician.<BR>Warning: critical initialisation failure. Repair required. Please contact a Cybersun-licensed technician.")
