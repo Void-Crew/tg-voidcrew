@@ -63,7 +63,7 @@ SUBSYSTEM_DEF(overmap)
  */
 /datum/controller/subsystem/overmap/proc/request_jump(modifier = 1)
 	jump_mode = BS_JUMP_CALLED
-	jump_timer = addtimer(CALLBACK(src, .proc/initiate_jump), jump_request_time * modifier, TIMER_STOPPABLE)
+	jump_timer = addtimer(CALLBACK(src, PROC_REF(initiate_jump)), jump_request_time * modifier, TIMER_STOPPABLE)
 	priority_announce("Preparing for jump. ETD: [jump_request_time * modifier / 600] minutes.", null, null, "Priority")
 
 /**
@@ -280,6 +280,8 @@ SUBSYSTEM_DEF(overmap)
 	while(!initial_ship_template && LAZYLEN(remaining_templates))
 		var/datum/map_template/shuttle/voidcrew/random_template = pick_n_take(remaining_templates)
 		if(initial(random_template.abstract) == random_template)
+			continue
+		if(initial(random_template.enabled) == FALSE)
 			continue
 		// the first ship will always be an NT or Syndicate one.
 		if(initial(random_template.faction_prefix) == NEUTRAL_SHIP)

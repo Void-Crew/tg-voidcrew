@@ -127,7 +127,7 @@
 		return
 
 	if(state_open)
-		close_machine(user)
+		close_machine()
 		return
 
 	else if(locked)
@@ -224,6 +224,6 @@
 /obj/machinery/public_nanite_chamber/MouseDrop_T(mob/target, mob/user)
 	if(!user.can_perform_action(src, FORBID_TELEKINESIS_REACH) || !Adjacent(target) || !user.Adjacent(target))
 		return
-	if(close_machine(user))
+	if(close_machine(target))
 		log_combat(user, target, "inserted", null, "into [src].")
 	add_fingerprint(user)

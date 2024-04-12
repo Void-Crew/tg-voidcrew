@@ -52,7 +52,7 @@ export const CryoStorageConsoleContent = (props, context) => {
             <TableCell>
               <Button
                 content="+"
-                disabled={cooldown > 0 || job.slots >= job.max}
+                disabled={cooldown > 0}
                 onClick={() =>
                   act('adjustJobSlot', {
                     toAdjust: job.ref,

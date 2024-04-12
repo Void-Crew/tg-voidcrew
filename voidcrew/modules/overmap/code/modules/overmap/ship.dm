@@ -115,30 +115,23 @@
 	//then the account, which relies on there having a job, as we set it to the captain's.
 	ship_account = new(newname = ship_team.name, job = job_slots[1], player_account = FALSE)
 
-	display_name = "[source_template.faction_prefix] [name]"
+	display_name = template.name
 	update_ship_color()
-	/*
-	map_name = "overmap_[REF(src)]_map"
 
-	cam_screen = new
-	cam_screen.del_on_map_removal = FALSE
-	cam_screen.generate_view(map_name)
-
-	cam_background = new
-	cam_background.del_on_map_removal = FALSE
-	cam_background.assigned_map = map_name
-	*/
 	if(render_map)	// Initialize map objects
 		map_name = "overmap_[REF(src)]_map"
+
 		cam_screen = new
 		cam_screen.name = "screen"
 		cam_screen.assigned_map = map_name
 		cam_screen.del_on_map_removal = FALSE
 		cam_screen.screen_loc = "[map_name]:1,1"
+
 		cam_background = new
 		cam_background.assigned_map = map_name
 		cam_background.del_on_map_removal = FALSE
 		update_screen()
+
 	SSovermap.simulated_ships += src
 
 /obj/structure/overmap/ship/Destroy()
@@ -277,6 +270,9 @@
 	crewmate.mind.wipe_memory() //clears ALL memories, but currently all they have is their old bank account.
 	crewmate.mind.assigned_role.paycheck_department = ship_team.name
 
+	if(!isnull(source_template.antag_datum))
+		crewmate.mind.add_antag_datum(source_template.antag_datum)
+
 	//Adds a faction hud to a newplayer documentation in _HELPERS/game.dm
 //	add_faction_hud(FACTION_HUD_GENERAL, faction_prefix, crewmate)
 
@@ -355,7 +351,7 @@
 		to_chat(user, "<span class='warning'>Ship must be still to interact!</span>")
 		return
 
-	INVOKE_ASYNC(object, /obj/structure/overmap/.proc/ship_act, user, src, optional_partner)
+	INVOKE_ASYNC(object, TYPE_PROC_REF(/obj/structure/overmap, ship_act), user, src, optional_partner)
 
 /**
   * Docks the shuttle by requesting a port at the requested spot.
@@ -370,7 +366,7 @@
 
 	priority_announce("Beginning docking procedures. Completion in [(shuttle.callTime + 1 SECONDS)/10] seconds.", "Docking Announcement", sender_override = name)
 	docked = to_dock //this wasnt getting updated at all before which is strange
-	addtimer(CALLBACK(src, .proc/complete_dock, WEAKREF(to_dock)), shuttle.callTime + 1 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(complete_dock), WEAKREF(to_dock)), shuttle.callTime + 1 SECONDS)
 	state = OVERMAP_SHIP_DOCKING
 	return "Commencing docking..."
 
@@ -434,7 +430,7 @@
 	shuttle.mode = SHUTTLE_IGNITING
 	shuttle.setTimer(shuttle.ignitionTime)
 	priority_announce("Beginning undocking procedures. Completion in [(shuttle.ignitionTime + 1 SECONDS)/10] seconds.", "Docking Announcement", sender_override = name)
-	addtimer(CALLBACK(src, .proc/complete_dock), shuttle.ignitionTime + 1 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(complete_dock)), shuttle.ignitionTime + 1 SECONDS)
 	state = OVERMAP_SHIP_UNDOCKING
 	return "Beginning undocking procedures..."
 
@@ -462,7 +458,7 @@
 				forceMove(docking_target)
 				state = OVERMAP_SHIP_IDLE
 			else
-				addtimer(CALLBACK(src, .proc/complete_dock, to_dock), 1 SECONDS) //This should never happen, yet it does sometimes.
+				addtimer(CALLBACK(src, PROC_REF(complete_dock), to_dock), 1 SECONDS) //This should never happen, yet it does sometimes.
 		if(OVERMAP_SHIP_UNDOCKING)
 			if(!isturf(loc))
 				if(istype(loc, /obj/structure/overmap/ship)) //Even more hardcoded, even more bad
@@ -472,11 +468,11 @@
 				forceMove(get_turf(loc))
 				if(istype(old_loc, /obj/structure/overmap/planet))
 					var/obj/structure/overmap/planet/D = old_loc
-					INVOKE_ASYNC(D, /obj/structure/overmap/planet/.proc/unload_level)
+					INVOKE_ASYNC(D, TYPE_PROC_REF(/obj/structure/overmap/planet, unload_level))
 				state = OVERMAP_SHIP_FLYING
 				//if(repair_timer)
 					//deltimer(repair_timer)
-				//addtimer(CALLBACK(src, /obj/structure/overmap/ship/.proc/tick_autopilot), 5 SECONDS) //TODO: Improve this SOMEHOW
+				//addtimer(CALLBACK(src, TYPE_PROC_REF(/obj/structure/overmap/ship, tick_autopilot)), 5 SECONDS) //TODO: Improve this SOMEHOW
 	calculate_mass()
 	update_screen()
 
@@ -495,7 +491,7 @@
 	if(!ignore_cooldown)
 		COOLDOWN_START(src, rename_cooldown, 5 MINUTES)
 	for(var/area/shuttle_area as anything in shuttle.shuttle_areas)
-		//shuttle_area.rename_area("[display_name] [initial(shuttle_area.name)]")
+//		shuttle_area.rename_area("[display_name] [initial(shuttle_area.name)]")
 	return TRUE
 
 /obj/structure/overmap/ship/proc/adjust_speed(n_x, n_y)
@@ -515,7 +511,7 @@
 		return
 
 	var/timer = 1 / MAGNITUDE(speed[1], speed[2]) * offset
-	movement_callback_id = addtimer(CALLBACK(src, .proc/tick_move), timer, TIMER_STOPPABLE)
+	movement_callback_id = addtimer(CALLBACK(src, PROC_REF(tick_move)), timer, TIMER_STOPPABLE)
 
 /**
   * Called by /proc/adjust_speed(), this continually moves the ship according to it's speed
@@ -536,7 +532,7 @@
 		return
 
 	var/timer = 1 / current_speed
-	movement_callback_id = addtimer(CALLBACK(src, .proc/tick_move), timer, TIMER_STOPPABLE)
+	movement_callback_id = addtimer(CALLBACK(src, PROC_REF(tick_move)), timer, TIMER_STOPPABLE)
 	update_screen()
 
 /**

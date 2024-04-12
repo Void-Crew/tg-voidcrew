@@ -23,9 +23,6 @@
 /obj/machinery/recharger,
 /turf/open/floor/carpet/neon/simple/red,
 /area/shuttle/voidcrew/high/security)
-"aN" = (
-/turf/closed/wall/r_wall,
-/area/template_noop)
 "aP" = (
 /obj/machinery/door/airlock/external,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -2653,9 +2650,9 @@ Aq
 Aq
 Aq
 Aq
-aN
-aN
-aN
+WT
+WT
+WT
 ZI
 dS
 eD

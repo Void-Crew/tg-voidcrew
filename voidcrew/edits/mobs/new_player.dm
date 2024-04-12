@@ -12,7 +12,8 @@
 
 	for(var/obj/structure/overmap/ship/active_ships as anything in SSovermap.simulated_ships)
 		if(isnull(active_ships.shuttle))
-			CRASH("[active_ships] has no shuttle???")
+			stack_trace("[active_ships] has no shuttle???")
+			continue
 		if(length(active_ships.shuttle.spawn_points) <= 0 || !active_ships.joining_allowed)
 			continue
 		shuttle_choices["[active_ships.name] - ([active_ships.source_template?.short_name || "Unknown Class"])"] = active_ships
@@ -23,6 +24,9 @@
 		return
 
 	if(selected_ship == "Purchase")
+		if (!GLOB.ship_buying)
+			tgui_alert(client, "Buying ships is disabled!")
+			return select_ship()
 		var/datum/map_template/shuttle/voidcrew/template = SSmapping.ship_purchase_list[tgui_input_list(src, "Please select ship to purchase!", "Welcome, [used_name].", SSmapping.ship_purchase_list)]
 		if(!template)
 			return select_ship()
@@ -140,6 +144,9 @@
 
 	log_manifest(character.mind.key, character.mind, character, latejoin = TRUE)
 	log_shuttle("[character.mind.key] / [character.mind.name] has joined [joined_ship.name] as [job.title]")
+
+	if(joined_ship.deletion_timer)
+		joined_ship.end_deletion_timer()
 
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_CREWMEMBER_JOINED, character, job.title)
 

@@ -36,13 +36,12 @@
 	CHECK_TICK
 	gen_turf.AfterChange(CHANGETURF_IGNORE_AIR|CHANGETURF_RECALC_ADJACENT)
 	CHECK_TICK
-	//TODO - Remove this
-	new_turf.lighting_build_overlay()
+
 	generate_features(new_turf)
 
 	CHECK_TICK
 
-/datum/biome/cave/proc/generate_caves(var/turf/gen_turf, var/string_gen)
+/datum/biome/cave/proc/generate_caves(turf/gen_turf, string_gen)
 	var/area/A = gen_turf.loc
 	if(!(A.area_flags & CAVES_ALLOWED))
 		return
@@ -64,15 +63,15 @@
 	//Overwrite turf areas with cave areas to combat weather
 	var/area/overmap_encounter/planetoid/cave/new_area = GLOB.areas_by_type[/area/overmap_encounter/planetoid/cave] || new
 	var/area/old_area = get_area(new_turf)
-	//TODO - Remove this
-	new_turf.lighting_build_overlay()
+	new_area.contents += new_turf
+	new_turf.change_area(old_area, new_area)
 	CHECK_TICK
 
 	if(!closed)
 		generate_features(new_turf)
 	CHECK_TICK
 
-/datum/biome/proc/generate_features(var/turf/new_turf)
+/datum/biome/proc/generate_features(turf/new_turf)
 	//FLORA SPAWNING
 	var/atom/spawned_flora
 	var/area/A = new_turf.loc

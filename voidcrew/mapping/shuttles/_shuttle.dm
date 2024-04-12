@@ -9,6 +9,10 @@
 	var/short_name
 	///Cost of the ship
 	var/part_cost = 1
+	///Allows the ship to be purchased by players
+	var/enabled = TRUE
+	///Antag datum (for event antag ships)
+	var/datum/antagonist/antag_datum = null
 
 	///List of job slots. Ensure the 'captain' is always the first entry
 	var/list/job_slots = list()

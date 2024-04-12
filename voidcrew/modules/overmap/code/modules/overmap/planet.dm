@@ -145,6 +145,9 @@
 	if(preserve_level || concerned || !mapzone)
 		return
 
+	if(first_dock_taken || second_dock_taken)
+		return
+
 	if(length(mapzone.get_mind_mobs()))
 		return //Dont fuck over stranded people? tbh this shouldn't be called on this condition, instead of bandaiding it inside
 

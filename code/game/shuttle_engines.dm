@@ -38,7 +38,7 @@
 	if(!port)
 		return FALSE
 	connected_ship_ref = WEAKREF(port)
-	port.engine_list += src
+	port.engine_list |= src
 	port.current_engine_power += engine_power
 	if(mapload)
 		port.initial_engine_power += engine_power

@@ -23,7 +23,7 @@
 	flora_spawn_chance = 25
 	mob_spawn_list = list(
 		/mob/living/simple_animal/butterfly/beach = 1,
-		///mob/living/simple_animal/slime/pet/beach = 1,
+		/mob/living/simple_animal/slime/pet/beach = 1,
 		///mob/living/simple_animal/chicken/rabbit/normal/beach = 1,
 		/mob/living/simple_animal/chicken/beach = 1,
 		/mob/living/simple_animal/chick/beach = 1,
@@ -39,8 +39,8 @@
 		/mob/living/simple_animal/pet/cat/cak/beach = 1,
 		/mob/living/simple_animal/butterfly/beach = 4,
 		/mob/living/simple_animal/hostile/retaliate/snake/beach = 5,
-//		/mob/living/simple_animal/slime/random/beach = 3,
-		/mob/living/simple_animal/hostile/poison/bees/toxin/beach = 3
+		/mob/living/simple_animal/slime/random/beach = 3,
+		/mob/living/simple_animal/hostile/bee/toxin/beach = 3
 	)
 	mob_spawn_chance = 2
 	feature_spawn_chance = 0.1
@@ -78,8 +78,8 @@
 	open_turf_types = list(/turf/open/water/beach = 1)
 	mob_spawn_list = list(
 		/mob/living/simple_animal/beachcarp = 1,
-		/mob/living/simple_animal/hostile/carp/beach = 1,
-		/mob/living/simple_animal/hostile/carp/beach/small = 1,
+		/mob/living/basic/carp/beach = 1,
+		/mob/living/basic/carp/beach/small = 1,
 		/mob/living/simple_animal/beachcarp/bass = 1,
 		/mob/living/simple_animal/beachcarp/trout = 1,
 		/mob/living/simple_animal/beachcarp/salmon = 1,
@@ -98,8 +98,8 @@
 	open_turf_types = list(/turf/open/water/beach/deep = 1)
 	mob_spawn_chance = 1.4
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/carp/beach = 6,
-		/mob/living/simple_animal/hostile/carp/beach/small = 5,
+		/mob/living/basic/carp/beach = 6,
+		/mob/living/basic/carp/beach/small = 5,
 		/mob/living/simple_animal/beachcarp/bass = 5,
 		/mob/living/simple_animal/beachcarp/trout = 5,
 		/mob/living/simple_animal/beachcarp/salmon = 5,
