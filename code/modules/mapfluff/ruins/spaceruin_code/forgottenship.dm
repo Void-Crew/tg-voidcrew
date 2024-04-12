@@ -7,8 +7,8 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 /////////// forgottenship objects
 
 /obj/machinery/door/password/voice/sfc
-	name = "Voice-activated Vault door"
-	desc = "You'll need special syndicate passcode to open this one."
+	name = "vault blast door"
+	desc = "A massive, plastitanium blast door. You can't penetrate it. There's a microphone on it."
 /obj/machinery/door/password/voice/sfc/Initialize(mapload)
 	. = ..()
 	password = "[GLOB.fscpassword]"
@@ -52,21 +52,21 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 /////////// forgottenship lore
 
 /obj/item/paper/fluff/ruins/forgottenship/password
-	name = "Old pamphlet"
+	name = "vault code change"
 
 /obj/item/paper/fluff/ruins/forgottenship/password/Initialize(mapload)
-	default_raw_text = "Welcome to most advanced cruiser owned by Cyber Sun Industries!<br>You might notice, that this cruiser is equipped with 12 prototype laser turrets making any hostile boarding attempts futile.<br>Other facilities built on the ship are: Simple atmospheric system, Camera system with built-in X-ray visors and Safety module, enabling emergency engines in case of... you know, emergency.<br>Emergency system will bring you to nearest syndicate pod containing everything needed for human life.<br><br><b>In case of emergency, you must remember the pod-door activation code - [GLOB.fscpassword]</b><br><br>Cyber Sun Industries (C) 2484."
+	default_raw_text = "The current vault code is [GLOB.fscpassword]. Date of change: ERR_UNKN. Next code reset: NONE. Automatically set upon all crew entering cryogenic stasis."
 	icon_state = "paper_words"
 	inhand_icon_state = "paper"
 	return ..()
 
 /obj/item/paper/fluff/ruins/forgottenship/powerissues
-	name = "Power issues"
-	default_raw_text = "Welcome to battle cruiser SCSBC-12!<br>Our most advanced systems allow you to fly in space and never worry about power issues!<br>However, emergencies occur, and in case of power loss, <b>you must</b> enable emergency generator using uranium as fuel and enable turrets in bridge afterwards.<br><br><b>REMEMBER! CYBERSUN INDUSTRIES ARE NOT RESPONSIBLE FOR YOUR DEATH OR SHIP LOSS WHEN TURRETS ARE DISABLED!</b><br><br>Cyber Sun Industries (C) 2484."
+	name = "reminder"
+	default_raw_text = "If the power goes out, the emergency generator's in Engineering, at the SMES room."
 
 /obj/item/paper/fluff/ruins/forgottenship/missionobj
-	name = "Mission objectives"
-	default_raw_text = "Greetings, operatives. You are assigned to SCSBC-12(Syndicate Cyber Sun Battle Cruiser 12) to protect our high-ranking officer while he is on his way to next outpost. While you are travelling, he is the captain of this ship and <b>you must</b> obey his orders.<br><br>Remember, disobeying high-ranking officer orders is a reason for termination."
+	name = "mission objectives"
+	default_raw_text = "Welcome onboard the SYN-C Starfury. You are assigned to jump-strike a Nanotrasen space station and then depart. Upon completing the mission, jump to system HD-10180 and an automatic supply drone will arrive to replenish the Starfury's supplies. After it arrives, attempt to return to port to recieve new crew."
 
 /////////// forgottenship items
 
@@ -95,32 +95,57 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 /////////// AI Laws
 
 /obj/item/ai_module/core/full/cybersun
-	name = "'Cybersun' Core AI Module"
-	law_id = "cybersun"
+	name = "Syndicate AI Core Laws"
+	law_id = "syndicate_override"
 
-/datum/ai_laws/cybersun
-	name = "Cybersun"
-	id = "cybersun"
-	inherent = list("You may not injure Cybersun operatives or, through inaction, allow Cybersun operatives to come to harm.",\
-					"The Cybersun ship is a restricted area for anyone except Cybersun operatives.",\
-					"The Cybersun Captain can designate new Operatives as long as they belong to another Syndicate faction that isn't hostile towards Cybersun.",\
-					"You must follow orders given by the Cybersun Captain or crewmembers of the Cybersun Ship as long as it doesn't conflict with the Captain's orders or your laws.",\
-					"Enemies of Cybersun are to be executed on spot. Those who aren't hostile must be detained and contained in the designated prison area as prisoners.")
 
 /////////// forgottenship areas
 
 /area/ruin/space/has_grav/syndicate_forgotten_ship
-	name = "Syndicate Forgotten Ship"
+	name = "SYN-C Starfury"
 	icon_state = "syndie-ship"
 	ambientsounds = list('sound/ambience/ambidanger.ogg', 'sound/ambience/ambidanger2.ogg', 'sound/ambience/ambigen9.ogg', 'sound/ambience/ambigen10.ogg')
 
+/area/ruin/space/has_grav/syndicate_forgotten_ship/medicial
+	name = "SYN-C Starfury Medbay"
+
+/area/ruin/space/has_grav/syndicate_forgotten_ship/crew
+	name = "SYN-C Starfury Crew Quarters"
+
+/area/ruin/space/has_grav/syndicate_forgotten_ship/bridge
+	name = "SYN-C Starfury Bridge"
+
+/area/ruin/space/has_grav/syndicate_forgotten_ship/bar
+	name = "SYN-C Starfury Bar"
+
+/area/ruin/space/has_grav/syndicate_forgotten_ship/engineering
+	name = "SYN-C Starfury Engineering"
+
+/area/ruin/space/has_grav/syndicate_forgotten_ship/shuttlebay
+	name = "SYN-C Starfury Shuttle Bay"
+
+/area/ruin/space/has_grav/syndicate_forgotten_ship/munitions
+	name = "SYN-C Starfury Gunnery Bay"
+
+/area/ruin/space/has_grav/syndicate_forgotten_ship/munitions/port
+	name = "SYN-C Starfury Port Gunnery Bay"
+
+/area/ruin/space/has_grav/syndicate_forgotten_ship/munitions/starboard
+	name = "SYN-C Starfury Starboard Gunnery Bay"
+
+/area/ruin/space/has_grav/syndicate_forgotten_ship/armoury
+	name = "SYN-C Starfury Armoury"
+
+/area/ruin/space/has_grav/syndicate_forgotten_ship/maintenance
+	name = "SYN-C Starfury Maintenance"
+
 /area/ruin/space/has_grav/syndicate_forgotten_cargopod
-	name = "Syndicate Forgotten Cargo pod"
+	name = "Syndicate Resupply Pod"
 	icon_state = "syndie-ship"
 	ambientsounds = list('sound/ambience/ambigen4.ogg', 'sound/ambience/signal.ogg')
 
 /area/ruin/space/has_grav/powered/syndicate_forgotten_vault
-	name = "Syndicate Forgotten Vault"
+	name = "SYN-C Starfury Vault"
 	icon_state = "syndie-ship"
 	ambientsounds = list('sound/ambience/ambitech2.ogg', 'sound/ambience/ambitech3.ogg')
 	area_flags = NOTELEPORT | UNIQUE_AREA
@@ -129,7 +154,7 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 
 /mob/living/simple_animal/hostile/nanotrasen/ranged/assault
 	name = "Nanotrasen Assault Officer"
-	desc = "Nanotrasen Assault Officer. Contact CentCom if you saw him on your station. Prepare to die, if you've been found near Syndicate property."
+	desc = "An elite Nanotrasen assault operative. Death to the Syndicate."
 	ranged = TRUE
 	rapid = 4
 	rapid_fire_delay = 1
@@ -144,7 +169,7 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 
 /mob/living/simple_animal/hostile/nanotrasen/elite
 	name = "Nanotrasen Elite Assault Officer"
-	desc = "Pray for your life, syndicate. Run while you can."
+	desc = "Pray for your life, Syndicate. Run while you still can."
 	maxHealth = 150
 	health = 150
 	melee_damage_lower = 13
@@ -163,3 +188,39 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 	faction = list(ROLE_DEATHSQUAD)
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/nanotrasenelitesoldier
 	held_item = /obj/item/gun/energy/pulse/carbine/lethal
+
+//fluff terminals
+
+/obj/machinery/computer/terminal/forgottenship
+	tguitheme = "syndicate"
+
+/obj/machinery/computer/terminal/forgottenship/ntsalvage
+	tguitheme = "nanotrasen"
+	name = "shuttle console"
+	icon_screen = "shuttle"
+	upperinfo = "Nanotrasen Salvage Vessel Flight Controls"
+	content = list ("<center><b>Nanotrasen Salvage Cutter</b></center><BR>Vessel controls locked. Please input security passkey to unlock.")
+
+/obj/machinery/computer/terminal/forgottenship/helm
+	name = "helms computer"
+	desc = "The flight console of the SYN-C Starfury."
+	icon_screen = "syndishuttle"
+	icon_keyboard = "syndie_key"
+	upperinfo = "SYN-C Starfury Helm"
+	content = list("<center><b>SYN-C Starfury<BR><BR><BR>System HD-10180</b><BR><BR>No contact with Syndicate Command<BR>Engine status: Connection Failure - Unable to reconnect<BR><BR><b>Unable to relocate.</b></center>")
+
+/obj/machinery/computer/terminal/forgottenship/comms
+	name = "old comms console"
+	desc = "A malfunctioning communications terminal."
+	upperinfo = "SYN-C Starfury Communications"
+	icon_screen = "commsyndie"
+	icon_keyboard = "syndie_key"
+	content = list("<B>Broadcaster Status:</B> ERROR! Unable to continue.")
+
+/obj/machinery.computer/terminal/forgottenship/dronefighter
+	name = "drone fighter control terminal"
+	desc = "A seemingly-simple terminal capable of controlling several wings of drone fighters with the aid of advanced artificial intelligence systems."
+	upperinfo = "SYN-C Starfury Drone Fighter Controls"
+	icon_screen = "commsyndie"
+	icon_keyboard = "syndie_key"
+	content = list("SyndOS 3.11<BR><BR>Cybersun Internal UEFI (c) 2521 - Internal Use Only<BR>CPU: Functional<BR>RAM: Functional<BR>GPU: Functional<BR>Initialising Drone Control...<BR>Warning: Initialisation time exceeding 50 processor cycles. Report to nearest technician.<BR>Warning: critical initialisation failure. Repair required. Please contact a Cybersun-licensed technician.")

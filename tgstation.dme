@@ -5338,6 +5338,7 @@
 #include "voidcrew\mapping\shuttles\pill_black.dm"
 #include "voidcrew\mapping\shuttles\pubby.dm"
 #include "voidcrew\mapping\shuttles\spitfire.dm"
+#include "voidcrew\mapping\shuttles\tram.dm"
 #include "voidcrew\mapping\shuttles\hostile\heretic.dm"
 #include "voidcrew\mapping\shuttles\nanotrasen\bead.dm"
 #include "voidcrew\mapping\shuttles\nanotrasen\phalanx.dm"
